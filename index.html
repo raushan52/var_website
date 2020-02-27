@@ -8,95 +8,134 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="owl.carousel.css">
+  <link rel="stylesheet" href="owl.theme.default.css">
+  <script type="text/javascript" src="jqury.js"></script>
+  <script type="text/javascript" src="owl.carousel.js"></script>
 
     
 </head>
 <body>
          
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo" class="image-responsive"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class= "nav-link" href="#">Tech Pool</a>
-          </li>
-          <li class="nav-item">
-            <a class= "nav-link" href="#">Development Service</a>
-          </li>
-          <li class="nav-item">
-            <a class= "nav-link" href="#">How It Works</a>
-          </li>
-          <li class="nav-item">
-            <a class= "nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class= "nav-link" href="#">Career</a>
-          </li>
-          <li class="nav-item">
-            <a class= "nav-link" href="#">Contact</a>
-          </li>
+  <!--navigation-->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+       
+        <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">OUR TEAM</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#price">PRICE PLAN</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">TESTIMONIALS</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="login.html">CONTECT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        </div>
 
-        </ul>
+        <!--Slider-->
 
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/s5.jpg">
+      <div class="carousel-caption">
+          <div class="text-left">
+          <h1 class="animated lightSpeedIn slow">Developer on rent</h1>
+          <h3 class="animated lightSpeedIn slow">Connect,rent,And work</h3>
+      </div>
+          <div class="text-left">
+          <button type="button" class="btn btn-primary btn-lg">Get Start With Hiring</button></div>
       </div>
     </div>
-  </nav>
-  <div id="slides" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#slides" data-slide-to="0" class="active"></li>
-      <li data-target="#slides" data-slide-to="1"></li>
-      <li data-target="#slides" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/image.png" alt="hire-developer-developeronrent"
-        
-        class="rev-slidebg">
-
-        <div class="carousel-caption">
-          <h1 class="display-3 text-danger">On Demand Developers</h1>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/iii.jpg">
-        <div class="carousel-caption">
-          <h1 class="display-2 text-danger">Hire Tech Developers</h1>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/ppp.jpg">
-        <div class="carousel-caption">
-          <h1 class="display-2">Dedicated Team</h1>
-        </div>
-      </div>
-
+    <div class="carousel-item">
+      <img src="images/s5.jpg">
+      <div class="carousel-caption">
+          <div class="text-left">
+        <h1 class="animated rubberBand slow">Hire Tech Developer </h1>
+        <h3 class="animated zoomIn slow">Pre Vetted Dedicated Team Of Developer For rent</h3>
+          </div>
+        <div class="text-left">
+        <button type="button" class="btn btn-outline-light btn-lg">Get Start With Hiring</button></div>
     </div>
-
+    </div>
+    <div class="carousel-item">
+      <img src="images/s5.jpg">
+      <div class="carousel-caption">
+          <div class="text-left">
+        <h1 class="animated bounceInUp slow">Developer on rent</h1>
+        <h3 class="animated heartBeat slow">Connect,rent,paid</h3>
+    </div>
+        <div class="text-left">
+        <button type="button" class="btn btn-outline-light btn-lg">Get Start With Hiring</button></div>
+    </div>
+    </div>
   </div>
   
-  <!-- section 2-->
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 
+
+  
+  
+  <!-- section 2-->
+  
   <div class="container-fluid">
-    <div class="row p-3" style="background-color: lightblue;">
-      <div class="col-md-12">
-        <h2 class="heading-dark text-center">Hire Software Developers, Engineers, and Coders from our Dedicated Tech Team</h2>
-        <p style="text-align:center !important;">
+    <div class="row">
+      <div class="col-md-12 center text-center" style="background-color: #eeeeee;">
+        <h2 class="heading-dark">Hire Software Developers, Engineers, and Coders from our Dedicated Tech Team</h2>
+        <p style="text-align:center !important;" class="section-2-para">
           We are indian based software development company, offering software and application developers, programmers, Engineers, and coders for hire on <br>dedicated monthly basis with easy contarct. We provide you access to our premium pool of pre-vetted tech<br> developers,
           both onsite and offsite.
         </p>
       </div>
 
-      <div class="row p-3">
+      <div class="row" style="background-color: #fff;">
 
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm">
-              <div>
-                <a>
+              <div class="menu-title tab-active">
+                <img src="images/Fullfull stack-1.png" alt="full-stack">
+                <br>
+                <a href="#">
                   <span>Web & Full Stack</span>
                 </a>
               </div>
@@ -105,6 +144,7 @@
             </div>
             <div class="col-sm">
               <div>
+                <img src="images/Mobility-1.png" alt="mobility">  
                 <a>
                   <span>Mobility</span>
                 </a>
@@ -114,6 +154,7 @@
             </div>
             <div class="col-sm">
               <div>
+                <img src="images/E com.png" alt="E-commerce">
                 <a>
                   <span>E-commerce & CMS</span>
                 </a>
@@ -123,6 +164,7 @@
             </div>
             <div class="col-sm">
               <div>
+                <img src="images/Block chain.png" alt="blockchain">
                 <a>
                   <span>Blockchain & ML</span>
                 </a>
@@ -132,6 +174,7 @@
             </div>
             <div class="col-sm">
               <div>
+                <img src="images/More.png" alt="Others">
                 <a>
                   <span>Others</span>
                 </a>
@@ -268,6 +311,8 @@
 
   </div>
 
+
+
   <!-- End of section 2-->
   
 
@@ -280,10 +325,10 @@
 
     <!-- Start of section 4-->
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #d6f0fb;">
       <div class="row p-5">
-        <div class="col-md-12">
-          <h1 class="text-center">How It Works</h1>
+        <div class="col-md-12 text-center">
+          <h1 class="">How It Works</h1>
           <br>
           <p>Giving your buisness Speed,Agility and Scalability</p>
           <p>The perfect engagement model for startups. enterpreneurs. buisness building next generation solutions.</p>
@@ -295,7 +340,9 @@
             <div class="row">
               <div class="col-md-3">
                 <div>
-                  <div>image</div>
+                  <div>
+                    <img src="images/connect.png" alt="connect">
+                  </div>
                 </div>
                 <div>
                   <h2>Connect</h2>
@@ -306,7 +353,9 @@
               </div>
               <div class="col-sm-3">
                 <div>
-                  <div>image</div>
+                  <div>
+                    <img src="images/Rent.png" alt="Rent">
+                  </div>
                 </div>
                 <div>
                   <h2>Rent</h2>
@@ -318,7 +367,9 @@
               </div>
               <div class="col-sm-3">
                 <div>
-                  <div>image</div>
+                  <div>
+                    <img src="images/Work.png" alt="Work">
+                  </div>
                 </div>
                 <div>
                   <h2>Work</h2>
@@ -330,7 +381,9 @@
               </div>
               <div class="col-sm-3">
                 <div>
-                  <div>image</div>
+                  <div>
+                    <img src="images/Pay.png" alt="Pay">
+                  </div>
                 </div>
                 <div>
                   <h2>Pay</h2>
@@ -350,12 +403,12 @@
 
 
     <!-- Start of Section 5-->
-    <div class="container">
-      <div class="row p-5" style="background-color: grey;">
-        <div class="col-md-12">
-          <h2 class="text-center">OUR SOFTWARE PRODUCT DEVELOPMENT SERVICES</h2>
-          <h6 class="text-center">GIVING YOUR BUSINESS SPEED, AGILITY AND SCALABILITY</h6>
-          <h3 class="text-center"> Our offshore software development services are geared to deliver results that you expect from an Indian IT outsourcing company.
+    <div class="container-fluid" style="background-color: #f4f4f4;">
+      <div class="row p-5">
+        <div class="col-md-12 text-center">
+          <h2 class="heading-dark">OUR SOFTWARE PRODUCT DEVELOPMENT SERVICES</h2>
+          <h6 class="sub-heading-dark">GIVING YOUR BUSINESS SPEED, AGILITY AND SCALABILITY</h6>
+          <h3 class=""> Our offshore software development services are geared to deliver results that you expect from an Indian IT outsourcing company.
           Truthfulness, transparency and collaborative approach is a start! </h3>
 
         </div>
@@ -363,7 +416,9 @@
           <div class="row">
             <div class="col-sm-4"> 
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Software Development.png" alt="software development">
+                </div>
                 <span>Software Development</span>
                 <p>High-end Quality Software Development Services compatible for both web and mobile applications surging impeccable user-experience to look for.</p>
 
@@ -372,7 +427,9 @@
             </div>
             <div class="col-md-4"> 
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Mobility.png" alt="Mobility">
+                </div>
                 <span>Mobility</span>
                 <p>Build Interactive Mobile Apps (Native and Hybrid) that are compatible with technologies like AR/VR, AI, IoT, Xamarin, Flutter, React Native, etc.</p>
 
@@ -382,7 +439,9 @@
 
             <div class="col-md-4"> 
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Team.png" alt="Dedicated Teams">
+                </div>
                 <span>INTEGRATED & DEDICATED TEAMS</span>
                 <p>Pioneer in IT Outsourcing Services, we have expertise in web and mobile app development. Outsource dedicated software development teams your projects.</p>
 
@@ -393,7 +452,9 @@
           <div class="row">
             <div class="col-md-4">
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Full stack.png" alt="Full stack developers">
+                </div>
                 <span>Full Stack Software Development</span>
                 <p>Build fast and secure applications with our full-stack software development teams. We have expertise in the latest technologies like MEAN Stack, MEAN Stack, LAMP, Node.JS and much more.</p>
               </div>
@@ -401,7 +462,9 @@
             </div>
             <div class="col-md-4">
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Business Transformation.png" alt="TRANSFORMATION">
+                </div>
                 <span>DIGITAL BUSINESS TRANSFORMATION</span>
                 <p>Transverse your business model through a digital business transformation with modernizing software development architecture for relevancy and optimal business value.</p>
               </div>
@@ -409,7 +472,9 @@
             </div>
             <div class="col-md-4">
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Devops.png" alt="Devops">
+                </div>
                 <span>DEVOPS</span>
                 <p>Accelerate your software development process with our expert DevOps professionals to automate your business methodology. We ensure smoother delivery for operation cycles.</p>
               </div>
@@ -419,21 +484,27 @@
           <div class="row">
             <div class="col-md-4">
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Ai.png" alt="AI">
+                </div>
                 <span>MACHINE LEARNING & AI</span>
                 <p>Build your next Artificial Intelligence Application with our software development teams having expertise on platforms like Tensorflow, GoLang, etc.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Product Innovation.png" alt="INnovation">
+                </div>
                 <span>PRODUCT INNOVATION & TECHNOLOGY</span>
                 <p>We have expertise in product engineering and innovation. Our development teams work remotely to align requirements that can forge in building quality.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div>
-                <div>image</div>
+                <div>
+                  <img src="images/Block Chain-1.png" alt="Blockchain">
+                </div>
                 <span>BLOCKCHAIN APPLICATIONS</span>
                 <p>Our Software Development Teams build blockchain applications like crypto wallets, dApps using Hyperledger, Solidity and Ethereum as platforms.</p>
               </div>
@@ -468,7 +539,9 @@
         <div class="row">
           <div class="col-md-4 col-xs-6">
             <div>
-              <div>for image</div>
+              <div>
+                <img src="images/payperuse-hover.png" alt="payperuse">
+              </div>
 
               <div>
                 <h4>Pay per use</h4>
@@ -480,7 +553,9 @@
 
           <div class="col-md-4 col-xs-6">
             <div>
-              <div>for image</div>
+              <div>
+                <img src="images/flexible-hover.png" alt="Flexible">
+              </div>
 
               <div>
                 <h4>Flexible</h4>
@@ -492,7 +567,9 @@
 
           <div class="col-md-4 col-xs-6">
             <div>
-              <div>for image</div>
+              <div>
+                <img src="images/economical-hover.png" alt="Economical">
+              </div>
 
               <div>
                 <h4>Economical</h4>
@@ -506,7 +583,9 @@
         <div class="row">
           <div class="col-md-4 col-xs-6">
             <div>
-              <div>for image</div>
+              <div>
+                <img src="images/percentage-hover.png">
+              </div>
 
               <div>
                 <h4>On/Off site</h4>
@@ -516,7 +595,9 @@
           </div>
           <div class="col-md-4 col-xs-6">
             <div>
-              <div>for image</div>
+              <div>
+                <img src="images/fulltime-hover.png">
+              </div>
 
               <div>
                 <h4>No Freelancers</h4>
@@ -526,7 +607,9 @@
           </div>
           <div class="col-md-4 col-xs-6">
             <div>
-              <div>for image</div>
+              <div>
+                <img src="images/shield-hover.png">
+              </div>
 
               <div>
                 <h4>IP/NDA Protection</h4>
@@ -542,8 +625,10 @@
 
 
         </div>
+
+
           <div class="col-md-4">
-            <img>image
+            <img src="images/greatteam.png" >
           </div>
 
       </div>
@@ -552,7 +637,7 @@
     <!--End of Section 6-->
 
     <!--Start of Section 7-->
-    <section style="background-color: blueviolet;">
+    <section style="background-color: #f4f4f4">
         <div class="container">
           <div class="row">
             <div class="col-md-">
@@ -786,7 +871,7 @@
     <!--End of section 9-->
 
     <!--Blogs-->
-    <section>
+    <section style="background-color: #e7e7e7;">
       <div class="container">
         <div class="row">
               <div class="col-md-3 col-sm-12 col-xs-12 marginbottom30">
@@ -850,7 +935,214 @@
 
     <!--End of Blogs-->
 
-    
+    <!--slide crosel arif-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 center">
+              <h2 class="heading-dark">OUR 
+                <strong>CLIENT</strong>
+              </h2>
+              <h6>
+                INCREDIBLE JOURNEY OF LEARNING
+              </h6>
+              <h3>Helping companies build solutions for their businesses</h3>
+
+            </div>
+          </div>
+          <div class="row center">
+
+            <div class="owl-carousel owl-theme">
+              <div class="item"><img src="images/c1.png"></div>
+              <div class="item"><img src="images/c2.jpg"></div>
+              <div class="item"><img src="images/c3.png"></div>
+              <div class="item"><img src="images/c4.png"></div>
+              <div class="item"><img src="images/c5.png"></div>
+              <div class="item"><img src="images/c6.png"></div>
+              <div class="item"><img src="images/c7.jpg"></div>
+              <div class="item"><img src="images/c8.png"></div>
+              <div class="item"><img src="images/c9.png"></div>
+              <div class="item"><img src="images/c10.jpg"></div>
+              <div class="item"><img src="images/c11.png"></div>
+              <div class="item"><img src="images/c12.jpg"></div>
+              <div class="item"><img src="images/c13.png"></div>
+              <div class="item"><img src="images/c14.png"></div>
+              <div class="item"><img src="images/c15.png"></div>
+          </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    <!--End of corousel arif-->
+
+    <!--Start Contact us-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <h2>GET IN TOUCH</h2>
+              <h6>WE'D LOVE TO HEAR FROM YOU!</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span>
+                      <p>sales@witarist.com</p>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+919971842701">
+                    <span>
+                      <p>(+91) 9971842701</p>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span>
+                      <p>D-35, E Block, Sector 7, Noida
+                        Uttar Pradesh, 201301</p>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <form>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <input id="name" type="text" value="" name="name" placeholder="Your Name">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <input id="email" type="email" value="" placeholder="Email" name="email" maxlength="100">
+                    </div>
+                    <div class="col-md-6">
+                      <input id="phone" type="text" value="" placeholder="Phone number" name="phone" maxlength="20">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" name="message"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div></div>
+                  <div class="col-md-12 text-center">
+                    <input id="submit_form" class="btn btn-primary btn-lg mb-xlg" type="submit" value="SUBMIT">
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    <!--End of Contact us-->
+
+    <!--Footer-->
+    <footer>
+      <div class="foot-line" style="background-color: #161d28;">
+        <div class="container">
+          <div class="row">
+            <div class="foot-line-entry col-md-8 col-sm-8 col-xs-12">
+              <div class="content">
+                <div class="cell-view">Call us:(+91) 9971842701</div>
+              </div>
+            </div>
+            <div class="foot-line-entry col-md-4 col-sm-4 col-xs-12">
+              <div class="content">
+                <div class="cell-view">Email:sales@witarist.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container" style="background-color: #153044;">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <div class="row">
+              <div class="sidebar footer-entry col-md-12 col-sm-12">
+                <div>
+                  <a href="#">
+                    <h2>
+                      <span>
+                        <strong>WitArist</strong>
+                      </span>
+                    </h2>
+                  </a>
+                  <div class="textwidget">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12"></div>
+          <div class="col-md-3 col-sm-12"></div>
+
+        </div>
+      </div>
+
+    </footer>
+
+    <!--End of Footer-->
+
+    <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+  </script>  
 
     
     
