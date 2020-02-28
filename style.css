@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     
+    
 }
 body {
     margin: 0;
@@ -18,5 +19,29 @@ body {
 }
 .section-2-para {
     margin-top : 45px;
+}
+.section_5_box {
+    padding: 2%;
+    
+}
+
+.section_5_logo {
+  background-color:#33ccff;
+  border-radius: 50%;
+  
+
+    
+}
+.section_5_container_box {
+    background-color: white;
+    
+}
+.section_7_box {
+    background-color: white;
+    margin: 10px;
+}
+
+.heading-dark {
+    line-height: 50px;
 }
 
