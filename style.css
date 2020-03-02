@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-     
     
 }
 body {
@@ -118,6 +117,7 @@ html .heading-dark {
 #section-9-img {
     position: absolute;
     right: -50px;
+    vertical-align: middle;
 }
 .section-12 {
     background-image: url(images/testimonial_bg.jpg);
@@ -232,8 +232,7 @@ ul.contact {
 footer {
     font-family: 'regular', sans-serif, Arial;
     font-size: 14px;
-    line-height: 22px;
-    padding-top: 40px;
+    line-height: 22px;    
     color: #c6cad2;
     background: #153044;
 }
@@ -262,3 +261,77 @@ footer {
     display: inline;
     text-decoration: none;
 }
+
+.mg-kk {
+  
+    padding-bottom: 0;
+}
+
+.mb-bg {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: MOntserrat-light !important;
+}
+.container#web_and_full_stack {
+
+    display: block;
+
+
+}
+
+/* disabled section 2*/
+.container#mobility {
+    display: none;
+}
+
+.container#e-commerce_and_cms{
+    display: none;
+}
+
+.container#blockchain_and_ml{
+
+    display: none;
+}
+
+.container#others {
+    display: none;
+}
+
+div#cont-2-item-1:hover .container#web_and_full_stack {
+    display: block;
+}
+
+div#cont-2-item-2 :hover .container#mobility {
+    display: block;
+}
+
+/* section 2 items */
+
+#lower-footer a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.footer-entry table td {
+    border-bottom: none !important;
+    border-top : none !important;
+}
+
+td, th {
+    padding : 0;
+}
+td {
+    margin: 15px;
+}
+  
+.sec-7-div {
+    padding : 20px;
+}
+
+#contact-items  li {
+    
+    list-style-type: none;
+}
+  
