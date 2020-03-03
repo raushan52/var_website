@@ -9,7 +9,8 @@ html, body{
     padding-right: 20px;
 }
 .nav-link{
-    font-size: 1.1em !important;
+    font-size: 14px !important;
+    font-weight: bold;
 }
 .carousel-inner img {
     width: 100%;
