@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat-Regular;
-    
+   
 }
 body {
     margin: 0;
@@ -423,8 +423,106 @@ label {
     background-color: #d6f0fb;
 }
 
+/** java section 5 **/
+
 #java_con_5 {
     border-radius: 5px 5px 5px 5px;
+    width : 48%;
   
 
+}
+
+.sec-5-clr-div {
+    background-color: #40c1ff;
+    padding: 6px;
+    padding-left: 7px;
+    border-radius: 5px 5px 1px 1px;
+}
+
+.sec-5-clr-div>div {
+    margin-top: 15px;
+}
+
+.sec-5-clr-div>div>div {
+    clear: both;
+    padding-left: 0px;
+}
+
+.sec-5-p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.java-sec-5-para {
+    color: #022C3E;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 45px;
+}
+
+.sec-5-clr-div2 {
+   
+    padding: 6px;
+    padding-left: 7px;
+    border-radius: 5px 5px 1px 1px;
+}
+
+/** Section 6 **/
+
+.java_section_6 {
+    background-color: #d6f0fb;
+}
+
+.java-bg-1 {
+    background-color: #c5eafa;
+}
+.java-bg-2 {
+    background-color: #a5dff7;
+}
+
+.java-bg-3 {
+    background-color: #84d8fb;
+
+}
+.java-bg-4 {
+    background-color: #62c7f1;
+}
+
+.java-bg-5 {
+    background-color: #31b6ee;
+}
+
+.java-sec-6-icon img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-indent: -9999px;
+    width: 132px;
+    height: 62px;
+}
+
+.java-sec-6-icon h4 {
+    text-align: center;
+    font-size: 54px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.java-sec-6-info p {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.java-info-p {
+    font-weight: 600;
+}
+
+
+/** Section 8 FAQ  **/
+
+.java_section_8 {
+    background-color: #f4f4f4;
 }
