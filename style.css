@@ -526,3 +526,41 @@ label {
 .java_section_8 {
     background-color: #f4f4f4;
 }
+
+.panel-group .panel-heading .panel-title {
+    background-color: #33ccff !important;
+}
+
+.panel-group .panel-heading a {
+    color: white;    
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+.java-faq-para {
+    color: #022C3E;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 45px;
+    margin-bottom: 20px;
+   
+    text-align: left;
+   margin-left: 25px;
+}
+
+.panel-default {
+    background-color: white;
+    
+    
+}
+.panel-body p {
+    margin-bottom: 25px;
+}
+
+
+/** for font awesome check-circle icons **/
+.fa-check-circle {
+ color: #33ccff;
+}
