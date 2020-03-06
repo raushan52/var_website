@@ -16,6 +16,44 @@ body {
     width: 70%;
     
 }
+/** sub-navigation items**/
+/**.menu_icons {
+     background-image: url("co_logo/menu_items/android.png");
+     height: 24px;
+     background-size: 100px;
+     width: 26px;
+     position: relative;
+     top: 5px;
+     display: inline-block;
+ }  **/
+
+ .menu_icons img {
+     width: 30px;
+ }
+ .menu_icons {
+     border-bottom: 2px solid grey;
+ }
+
+ .sub-heading-list {
+     list-style-type: none;
+
+ }
+
+ .sub-heading-list li {
+     margin-bottom: 20px;
+     left: 10px;
+    
+ }
+ .sub-heading-list li {
+     border-bottom: 2px solid greys;
+ }
+
+ .mega-col {
+     margin-top: 10px;
+     float: left;
+ }
+
+
 
 /** Section 2 **/
 
@@ -27,14 +65,14 @@ body {
     border-bottom: 3px solid #33ccff;
     background-color: #e6f5fb;
 }
-
 .menu-title {
     text-align: center;
     padding: 35px 0;
     -webkit-transition: 0.2s ease;
     cursor: pointer;
-    
+
 }
+
 
 .section_5_box {
    
@@ -263,7 +301,7 @@ footer {
     font-family : Montserrat-Light;
 }
 
-.secgtion-2-gd-box {
+.section-2-gd-box {
     text-decoration: none;
 }
 
@@ -407,6 +445,8 @@ label {
     color : #022C3E !important;
 }
 
+
+/** section 4 **/
 .java_span_h4 {
     font-size: 60px;
     color: #4ba7f4;
@@ -572,9 +612,7 @@ label {
     
     
 }
-.panel-body p {
-    margin-bottom: 25px;
-}
+
 
 
 /** for font awesome check-circle icons **/
