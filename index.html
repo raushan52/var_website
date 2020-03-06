@@ -22,12 +22,19 @@
   
 
   <script>
+
+
+
+
+
     $(document).ready(function(){
         $("#web_and_full_stack_menu").click(function(){
             $("#web_and_full_stack").toggle("slide");
             
         });
     });
+
+
     $(document).ready(function(){
         $("#mobility-menu").click(function(){
             $("#mobility").toggle("slide");
@@ -479,9 +486,9 @@
       <div class="container">
       <div class="row" >
         <div class="col-sm-12">
-          <div class="row text-center" style="margin-bottom: 38px;">
-            <div class="col col-sm" id="cont-2-item-1">
-              <div class="sec-2-img-div menu-title tab-active" id="web_and_full_stack_menu">
+          <div class="row text-center" style="margin-bottom: 38px; background-color: white;">
+            <div class="col col-sm" id="cont-2-item-1" onclick="renderTechPool('web', 'web-btn')">
+              <div class="sec-2-img-div menu-title tab-active web-btn" id="web_and_full_stack_menu" >
                 <img src="images/Fullfull stack-1.png" alt="full-stack">
                 <br>
                 

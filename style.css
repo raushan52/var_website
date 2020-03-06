@@ -16,9 +16,26 @@ body {
     width: 70%;
     
 }
+
+/** Section 2 **/
+
 .section-2-para {
     margin-top : 45px;
 }
+
+.tab-active {
+    border-bottom: 3px solid #33ccff;
+    background-color: #e6f5fb;
+}
+
+.menu-title {
+    text-align: center;
+    padding: 35px 0;
+    -webkit-transition: 0.2s ease;
+    cursor: pointer;
+    
+}
+
 .section_5_box {
    
     
