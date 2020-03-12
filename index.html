@@ -63,8 +63,9 @@
 <body>
          
   <!--navigation-->
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light">
+  
+  <div class="container-fluid" style="position: fixed; top: 0; z-index: 100000; background-color: #161d28;" >
+    <nav class="navbar navbar-expand-lg" >
        
         <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -73,7 +74,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">TECH POOL</a>
+              <a class="nav-link active" href="#">TECH POOL</a>
 
 
                 <ul class="mega-dropdown desk-menu" style="display: none;">
@@ -539,7 +540,7 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/s5.jpg">
+        <img src="images/s5.jpg"> 
       <div class="carousel-caption">
           <div class="text-left">
           <h1 class="animated lightSpeedIn slow">Developer on rent</h1>
@@ -583,10 +584,16 @@
 </div>
 
 
+<!--Top Navigator-->
+  <a href="#demo" class="scrolltotop" >
+    <i class="fas fa-chevron-circle-up fa-3x"></i>
+  </a>
+<!--End of Top Navigator-->
+
   
   
   <!-- section 2-->
-  <section >
+  <section>
   
   <div class="container-fluid">
     <div class="row">
@@ -1969,6 +1976,7 @@
 
             </div>
           </div>
+        
           <div class="row">
 
             <div class="owl-carousel owl-theme">
@@ -1987,11 +1995,11 @@
               <div class="item"><img src="images/c13.png"></div>
               <div class="item"><img src="images/c14.png"></div>
               <div class="item"><img src="images/c15.png"></div>
-          </div>
+            </div>
 
           </div>
 
-        </div>
+        </div> 
       </section>
 
     <!-- End of section 11 -------  End of corousel arif-->
@@ -2230,7 +2238,7 @@
             </div>
             <div class="col-md-6 col-sm-6">
                
-                    <form>
+                    <form action="linked_pages/form.php" method="POST">
                       <div class="container ">
                         <div class="row">
                           <!--<div class="form-group"> -->
@@ -2478,6 +2486,7 @@
       </div>
 
     </footer>
+  
 
     <!--End of Footer-->
 

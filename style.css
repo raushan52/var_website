@@ -55,6 +55,29 @@ body {
 
 
 
+ /** Scroll to top **/
+ a.scrolltotop {
+     display: block;
+     border: 1px solid white transparent;
+     font-size: 20px;
+     height: 50px;
+     padding-top: 5px;
+     position: fixed;
+     right: 65px;
+     bottom : 75px;
+     text-align: center;
+     width: 50px;
+     z-index: 1000;
+     
+    
+
+ }
+ /** Scroll to top **/
+
+
+
+
+
 /** Section 2 **/
 
 .section-2-para {
