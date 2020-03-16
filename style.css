@@ -94,6 +94,8 @@ body {
     -webkit-transition: 0.2s ease;
     cursor: pointer;
 
+
+    
 }
 
 
@@ -641,4 +643,28 @@ label {
 /** for font awesome check-circle icons **/
 .fa-check-circle {
  color: #33ccff;
+}
+
+
+/** java developer page**/
+
+.other_service_div p{
+    color: black;
+  
+}
+
+.other_service_div {
+    padding-top: 2rem;
+}
+
+
+
+
+/** career page**/
+
+.career-position {
+    background-color: white;
+    border-radius: 15;
+    border-top: 4px solid #ccc;
+    padding: 2rem;
 }
