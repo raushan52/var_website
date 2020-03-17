@@ -204,16 +204,18 @@ html .heading-dark {
 }
 
 .blog-content {
-    background-color: white;
-    padding-bottom: 10px;
+    background-color: white;   
     padding-left: 10px;
     padding-right: 10px;
+   
 }
 
+
 .h4-line {
-    font-size: 60px;
+    font-size: 80px;
     color: #e43338 !important;
     margin-left: 5%;
+   
 }
 
 .blog-text {
