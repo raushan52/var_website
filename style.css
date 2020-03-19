@@ -465,6 +465,10 @@ label {
 
 }
 
+.java_section_2 p {
+    font-size: 1rem;
+}
+
 .mb-java {
     margin-bottom: 20px !important;
     font-size: 14px !important;
@@ -502,6 +506,11 @@ label {
     text-align: center;
     font-weight: 600;
 }
+
+.java_sec_4_img_div + div>p {
+    font-size: 1.5rem;
+}
+
 
 .java_section_4 {
     background-color: #d6f0fb;
