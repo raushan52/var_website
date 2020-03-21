@@ -29,6 +29,120 @@
   
 
   <script>
+    $(document).ready(function(){
+      $("#web_and_full_stack_menu").click(function(){
+        $("#web_and_full_stack").show("slide");
+      
+      });
+      $("#mobility-menu").click(function(){
+        $("#web_and_full_stack").hide();       
+      });
+      $("#e_commerce_and_cms_menu").click(function(){
+        $("#web_and_full_stack").hide();       
+      });
+      $("#blockchain_and_ml_menu").click(function(){
+        $("#web_and_full_stack").hide();
+      });
+      $("#others_menu").click(function(){
+        $("#web_and_full_stack").hide();
+      });
+    });
+
+
+    $(document).ready(function(){
+      $("#mobility-menu").click(function(){
+        $("#mobility").show("slide");
+      
+      });
+      $("#web_and_full_stack_menu").click(function(){
+        $("#mobility").hide();       
+      });
+      $("#e_commerce_and_cms_menu").click(function(){
+        $("#mobility").hide();       
+      });
+      $("#blockchain_and_ml_menu").click(function(){
+        $("#mobility").hide();
+      });
+      $("#others_menu").click(function(){
+        $("#mobility").hide();
+      });
+    });
+
+
+    $(document).ready(function(){
+      $("#e_commerce_and_cms_menu").click(function(){
+        $("#e_commerce_and_cms").show("slide");
+      
+      });
+      $("#web_and_full_stack_menu").click(function(){
+        $("#e_commerce_and_cms").hide();       
+      });
+      $("#mobility-menu").click(function(){
+        $("#e_commerce_and_cms").hide();       
+      });
+      $("#blockchain_and_ml_menu").click(function(){
+        $("#e_commerce_and_cms").hide();
+      });
+      $("#others_menu").click(function(){
+        $("#e_commerce_and_cms").hide();
+      });
+    });
+
+
+    $(document).ready(function(){
+      $("#blockchain_and_ml_menu").click(function(){
+        $("#blockchain_and_ml").show("slide");
+      
+      });
+      $("#web_and_full_stack_menu").click(function(){
+        $("#blockchain_and_ml").hide();       
+      });
+      $("#mobility-menu").click(function(){
+        $("#blockchain_and_ml").hide();       
+      });
+      $("#e_commerce_and_cms_menu").click(function(){
+        $("#blockchain_and_ml").hide();
+      });
+      $("#others_menu").click(function(){
+        $("#blockchain_and_ml").hide();
+      });
+    });
+
+
+
+    $(document).ready(function(){
+      $("#others_menu").click(function(){
+        $("#others").show("slide");
+      
+      });
+      $("#web_and_full_stack_menu").click(function(){
+        $("#others").hide();       
+      });
+      $("#mobility-menu").click(function(){
+        $("#others").hide();       
+      });
+      $("#e_commerce_and_cms_menu").click(function(){
+        $("#others").hide();
+      });
+      $("#blockchain_and_ml_menu").click(function(){
+        $("#others").hide();
+      });
+    });
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<!--  <script>
       $(document).ready(function(){
         $("#web_and_full_stack_menu").click(function(){
             $("#web_and_full_stack").toggle("slide");
@@ -64,6 +178,7 @@
     
 
 </script>
+ -->
   
     
 </head>
@@ -74,7 +189,7 @@
   <div class="container-fluid" style="position: fixed; top: 0; z-index: 100000; background-color: #161d28;" >
     <nav class="navbar navbar-expand-lg" >
        
-        <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo" class="img-responsive"></a>
+        <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo" class="img-fluid"></a>
         <button class="navbar-toggler float-right " type="button" data-toggle="collapse" data-target="#navbarNav" >
           <span class="navbar-toggler-icon" ></span>
         </button>
@@ -105,7 +220,7 @@
                             <li>
                               <a href="#">
                               <div class="menu_icons android">
-                               <img src="co_logo/menu_items/android.png" alt="Android Developer" class="img-responsive"> 
+                               <img src="co_logo/menu_items/android.png" alt="Android Developer" class="img-fluid"> 
                                 </div>
                               Android Developer
                               </a>
@@ -617,6 +732,7 @@
       <!--java script-->
 
 
+     
 
       <div class="container">
       <div class="row" >
@@ -846,12 +962,12 @@
 
         <!--Mobility-->
         
-        <div class="container" id="mobility" >
+        <div class="container" id="mobility" style="display: none;">
          
           <div class="row text-center">
             <div class="col col-sm-3">
         
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/mobile_app_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -864,7 +980,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/xamarin.html" class="secgtion-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/xamarin.jpg" width="60"><br>
@@ -877,7 +993,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/android_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/android.png" width="60"> <br>
@@ -889,7 +1005,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/ios_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="section_2_others_icons/apple.png" width="60">
@@ -904,7 +1020,7 @@
           </div>
           <div class="row text-center">
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/ionic.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/ionic.webp" width="60"> <br>
@@ -915,7 +1031,7 @@
               
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/iphone_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/iphone-dev.png" width="60"> <br>
@@ -927,7 +1043,7 @@
 
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/phonegap_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/phonegap.png" width="60"> <br>
@@ -957,12 +1073,12 @@
 
         <!--E-Commerce & CMS-->
 
-        <div class="container" id="e_commerce_and_cms" >
+        <div class="container" id="e_commerce_and_cms" style="display: none;">
          
           <div class="row text-center">
             <div class="col col-sm-3">
        
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/wordpress.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -975,7 +1091,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/magento_developer.html" class="secgtion-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/magento1.png" width="60"><br>
@@ -988,7 +1104,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/drupal_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/hire-drupal.png" width="60"> <br>
@@ -1000,7 +1116,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/joomla_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="section_2_others_icons/hire-joomla.png" width="60">
@@ -1019,12 +1135,12 @@
         <!--End of E-Commerce & CMS-->
 
         <!--Blockchain & ML-->
-        <div class="container" id="blockchain_and_ml">
+        <div class="container" id="blockchain_and_ml" style="display: none;">
          
           <div class="row text-center">
             <div class="col col-sm-3">
         
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/blockchain.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1037,7 +1153,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/chatbot.html" class="secgtion-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/chatbot.png" width="60"><br>
@@ -1084,12 +1200,12 @@
 
         <!--Others-->
 
-        <div class="container" id="others">
+        <div class="container" id="others" style="display: none;">
          
           <div class="row text-center">
             <div class="col col-sm-3">
         
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/hybrid_app_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1102,7 +1218,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/iot_developer.html" class="secgtion-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/iot.png" width="60"><br>
@@ -1115,7 +1231,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/dev_ops_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/devops.jpg" width="60"> <br>
@@ -1127,7 +1243,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/database_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="section_2_others_icons/database.jpg" width="60">
@@ -1154,7 +1270,7 @@
               
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/ico_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/ico.jpg" width="60"> <br>
@@ -1166,7 +1282,7 @@
 
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/golang_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/golang.png" width="60"> <br>
@@ -1177,7 +1293,7 @@
               
             </div>
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/dot_net_developer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/net.png" width="60"> <br>
@@ -1191,7 +1307,7 @@
   
           <div class="row text-center">
             <div class="col col-sm-3">
-              <a href="#" class="secgtion-2-gd-box">
+              <a href="linked_pages/hire_test_engineer.html" class="secgtion-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/test-eng.png" width="60"> <br>
@@ -1202,7 +1318,7 @@
              
               </div>
               <div class="col col-sm-3">
-                <a href="#" class="secgtion-2-gd-box">
+                <a href="linked_pages/ruby_on_rails_developer.html" class="secgtion-2-gd-box">
                 <div class="sec-2-img-div"> 
                  
                     <img src="section_2_others_icons/rubyonrails.png" width="60"> <br>
@@ -1583,7 +1699,7 @@
         </div>
       
           <div class="col-md-4">
-              <img src="images/greatteam.png" class="img-responsive"  id="section-6-img" >
+              <img src="images/greatteam.png" class="img-fluid"  id="section-6-img" >
           </div>
         </div>
       </div>
@@ -1763,7 +1879,7 @@
 
           <div class="col-md-4">
           
-             <img src="images/buildproducts.png" alt="build-great products"  class="img-responsive" id="big-img">  
+             <img src="images/buildproducts.png" alt="build-great products"  class="img-fluid" id="big-img">  
 
            
           </div>
@@ -1851,20 +1967,21 @@
                               <div class="col-md-12 text-center mt-5">
                                   <h4>Tech Stack</h4>
                                   <br>
-                                  <span class="btn btn-info mb-2">PHP</span>
-                                  <span class="btn btn-info mb-2">NodeJS</span>
-                                  <span class="btn btn-info mb-2">Android (Java)</span>
-                                  <span class="btn btn-info mb-2">Objective C</span>
-                                  <span class="btn btn-info mb-2">Magento</span>
-                                  <span class="btn btn-info mb-2">AngularJS</span>
-                                  <span class="btn btn-info mb-2">Bootstrap</span>
+                                  <a href="linked_pages/php_developer.html"><span class="btn btn-info mb-2">PHP</span></a>
+                                  <a href="linked_pages/node_js_developer.html"><span class="btn btn-info mb-2">NodeJS</span></a>
+                                  <a href="linked_pages/android_developer.html"><span class="btn btn-info mb-2">Android (Java)</span></a>
+                                  <a href="#"><span class="btn btn-info mb-2">Objective C</span></a>
+                                  <a href="linked_pages/magento_developer.html"><span class="btn btn-info mb-2">Magento</span></a>
+                                  <a href="linked_pages/angular_js_developer.html"><span class="btn btn-info mb-2">AngularJS</span></a>
+                                  <a href="#"><span class="btn btn-info mb-2">Bootstrap</span></a>
                                   <br>
                                   <a href="#" class="btn btn-lg btn-danger mt-3">View Case Study</a>
                               </div>
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="images/aroma-casestudie-2.jpg">
+                            <a href="#"><img src="images/aroma-casestudie-2.jpg"></a>
+                            
                           </div>
                         </div>
 
@@ -2167,7 +2284,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col container-blog">
                   <a href="#">
-                    <img src="images/blog-2.jpg" class="img-responsive center-block" height="250" width="100%">
+                    <img src="images/blog-2.jpg" class="img-fluid center-block" height="250" width="100%">
                   </a>
                   <div class="blog-content">
                     <h4 class="h4-line">-</h4>
@@ -2176,13 +2293,13 @@
                     </p>
                     <a href="#">
                       <h4 class="mb-sm h4-bc">MEAN v/s MERN Technologies</h4>
-                      <img src="images/bt_blog.png"  class="blog-button img-responsive">
+                      <img src="images/bt_blog.png"  class="blog-button img-fluid">
                     </a>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col container-blog">
                   <a href="#">
-                    <img src="images/blog-3.jpg" class="img-responsive center-block" height="250" width="100%">
+                    <img src="images/blog-3.jpg" class="img-fluid center-block" height="250" width="100%">
                   </a>
                   <div class="blog-content">
                     <h4 class="h4-line">-</h4>
@@ -2191,7 +2308,7 @@
                     </p>
                     <a href="">
                       <h4 class="mb-sm h4-bc">Python as a language</h4>
-                      <img src="images/bt_blog.png" class="img-responsive blog-button">
+                      <img src="images/bt_blog.png" class="img-fluid blog-button">
                     </a>
                   </div>
                 </div>
@@ -2437,7 +2554,7 @@
                   </h2>
                   <div class="menu-footer-sidebar-2-container">
                     <li class="menu-item menu-item-type-post_type menu_item-object-page menu-item-1347">
-                      <a href="#">Hire AngularJS Developer</a>
+                      <a href="linked_pages/angular_js_developer.html">Hire AngularJS Developer</a>
                     </li>
                     <li>
                       <a href="linked_pages/php_developer.html">
@@ -2445,16 +2562,16 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">Hire Dot Net Developer</a>
+                      <a href="linked_pages/dot_net_developer.html">Hire Dot Net Developer</a>
                     </li>
                     <li>
-                      <a href="#">Hire Node JS Developer</a>
+                      <a href="linked_pages/node_js_developer.html">Hire Node JS Developer</a>
                     </li>
                     <li>
-                      <a href="#">Hire Python Developer</a>
+                      <a href="linked_pages/python_developer.html">Hire Python Developer</a>
                     </li>
                     <li> 
-                      <a href="#">Hire Magento Developer</a>
+                      <a href="linked_pages/magento_developer.html">Hire Magento Developer</a>
                     </li>
                   </div>
 
@@ -2471,10 +2588,10 @@
                     <strong>Mobile Solutions</strong>
                   </h2>
                   <div class="menu-footer-sidebar-2-container">
-                    <li><a href="#">Hire Android Developer</a></li>
-                    <li><a href="#">Hire Hybrid Developer</a></li>
-                    <li><a href="#">Hire IOS Developer</a></li>
-                    <li><a href="#">Hire Xamarin Developer</a></li>
+                    <li><a href="linked_pages/android_developer.html">Hire Android Developer</a></li>
+                    <li><a href="linked_pages/hybrid_app_developer.html">Hire Hybrid Developer</a></li>
+                    <li><a href="linked_pages/ios_developer.html">Hire IOS Developer</a></li>
+                    <li><a href="linked_pages/xamarin.html">Hire Xamarin Developer</a></li>
                    
                   </div>
                 </div>
