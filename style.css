@@ -16,6 +16,11 @@ body {
     width: 70%;
     
 }
+
+
+
+
+
 /** sub-navigation items**/
 /**.menu_icons {
      background-image: url("co_logo/menu_items/android.png");
@@ -29,9 +34,12 @@ body {
 
  .menu_icons img {
      width: 30px;
+     margin-bottom: 1%;
+     margin-right: 0.5rem;
  }
  .menu_icons {
      border-bottom: 2px solid grey;
+    
  }
 
  .sub-heading-list {
@@ -40,18 +48,48 @@ body {
  }
 
  .sub-heading-list li {
-     margin-bottom: 20px;
-     left: 10px;
+    
     
  }
  .sub-heading-list li {
      border-bottom: 2px solid greys;
+     padding: 2%;
  }
+
+ #main-sub-nav>div {
+     margin-top: 1rem;
+ }
+
+ #main-sub-nav>div>ul{
+  
+     padding-top: 3%;
+
+ }
+
+ #main-sub-nav>div>ul>li {
+
+    margin: 0 atuo;
+   padding: 3%;
+    width: 100%;
+
+
+ }
+
+ #main-sub-nav>div>ul>li>a {
+     color: #333;
+ }
+   
 
  .mega-col {
      margin-top: 10px;
      float: left;
+    
  }
+
+
+
+
+
 
 
 

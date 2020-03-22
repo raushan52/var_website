@@ -132,6 +132,46 @@
 
 
 
+    $(document).ready(function(){
+      $("#tech-pool").mouseover(function(){
+        $("#tech-pool-items").show("slide");
+        
+      
+      });
+      $("#tech-pool").mouseout(function(){  
+        $("#tech-pool-items").hide();  
+      });  
+
+      
+
+    });
+
+
+
+
+
+  $(document).ready(function(){  
+    $("#dev-service").mouseover(function(){
+        $("#dev-service-items").show("slide");
+        
+      
+      });
+      $("#dev-service").mouseout(function(){  
+        $("#dev-service-items").hide();  
+      });  
+
+
+      
+    });
+
+  
+
+
+
+
+
+
+
 
 
 
@@ -186,7 +226,7 @@
          
   <!--navigation-->
   
-  <div class="container-fluid" style="position: fixed; top: 0; z-index: 100000; background-color: #161d28;" >
+  <div class="container-fluid" style="top: 0; z-index: 100000; background-color: #161d28;" >
     <nav class="navbar navbar-expand-lg" >
        
         <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo" class="img-fluid"></a>
@@ -195,443 +235,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item" id="tech-pool">
               <a class="nav-link active" href="index.html">TECH POOL</a>
-
-
-                <ul class="mega-dropdown desk-menu" style="display: none;">
-                  <li class="row" style="padding-left: 6%;">
-                      <div>
-                        <div class="form-group">
-                          <div class="col-md-3"></div>
-                          <div class="col-md-6 text-center">
-                            <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
-                          </div>
-                          <div class="col-md-3"></div>
-                        </div>
-                        <div class="mega-col">
-                          <ul class="sub-heading-list">
-                            <li>
-                              <a href="#">
-                                <img src="co_logo/menu_items/react-js.png" alt="ReactJS">
-                                ReactJS Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                              <div class="menu_icons android">
-                               <img src="co_logo/menu_items/android.png" alt="Android Developer" class="img-fluid"> 
-                                </div>
-                              Android Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons front-end">
-                                  <img src="co_logo/menu_items/front-end.png" alt="Front-End Developer">  
-                                </div>
-                              Front-End Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons angularjs">
-                                  <img src="co_logo/menu_items/angularjs.png" alt="AngularJS Developer">
-                                  
-                                </div>
-                                AngularJS Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons wordpress">
-                                  <img src="co_logo/menu_items/wordpress.jpg" alt="WordPress Developer">
-                                
-                                </div>
-                                Wordpress Developer
-                               
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons javascript">
-                                  <img src="co_logo/menu_items/javascript.svg" alt="JavaScript Developer">  
-                                  
-                                </div>
-                                JavaScript Developer
-                                
-                              </a>
-                            </li>
-                            <li style="margin-top: 30px;">
-                              <a href="#">
-                                <div class="menu_icons hybrid-app">
-                                  <img src="co_logo/menu_items/hybrid.png" alt="Hybrid App Developer">  
-                                 
-                                </div>
-                                Hybrid App Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons phonegap"> 
-                                  <img src="co_logo/menu_items/phonegap.png" alt="Phonegap Developer">  
-                                 
-                                </div>
-                                Phonegap Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons ruby-on-rails">
-                                  <img src="co_logo/menu_items/ruby-on-rails.png" alt="Ruby On Rails">
-                                 
-                                </div>
-                                Ruby on Rails Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons ionic">
-                                  <img src="co_logo/menu_items/ionic.webp" alt="Ionic Developer">  
-                                  
-                                </div>
-                                Ionic Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons test-engineer">
-                                  <img src="co_logo/menu_items/test-engineer.png" alt="Test Engineer">
-                                 
-                                </div>
-                                Test Engineer
-                                
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="mega-col">
-                          <ul class="sub-heading-list">
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons ios">
-                                  <img src="co_logo/menu_items/ios.png" alt="iOS Developer">
-                                  
-                                </div>
-                                iOS Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons nodejs">
-                                  <img src="co_logo/menu_items/nodejslogo.png" alt="NodeJS Developer">
-                                
-                                </div>
-                                NodeJS Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="linked_pages/java_developer.html">
-                                <div class="menu_icons java">
-                                  <img src="co_logo/menu_items/java.webp" alt="Java Developer">
-                                 
-                                </div>
-                                Java Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons python">
-                                  <img src="co_logo/menu_items/python.jpg" alt="Python Developer">
-                                  
-                                </div>
-                                Python Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons iot-developer">
-                                  <img src="co_logo/menu_items/IOT.png" alt="IOT Developer">
-                                 
-                                </div>
-                                IoT Developer  
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons magento">
-                                  <img src="co_logo/menu_items/magento1.png" alt="Magento Developer">
-                                 
-                                </div>
-                                Magento Developer
-                                
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu_icons blockchain">
-                                  <img src="co_logo/menu_items/bitcoin_dev.png" alt="Blockchain Developer">
-                                </div>
-                                Blockchain Developer
-                              </a>
-                            </li>
-                            <li style="margin-top: 39px;">
-                              <a href="#">
-                                <div class="menu-icons devops">
-                                  <img src="co_logo/menu_items/devops.jpg" alt="DevOps Developer">
-                                </div>
-                                DevOps Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons joomla">
-                                  <img src="co_logo/menu_items/joomla.png" alt="Joomla Developer">
-                                </div>
-                                Joomla Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons mobile-app">
-                                  <img src="co_logo/menu_items/mobile-app.png" alt="Mobile App Developer">
-                                </div>
-                                Mobile App Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons web-developer">
-                                  <img src="co_logo/menu_items/web-developer.webp" alt="Web Developer">
-                                </div>
-                                Web Developer
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="mega-col">
-                          <ul class="sub-heading-list">
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons ux-developer">
-                                  <img src="co_logo/menu_items/ux.png" alt="UX Developer">
-                                </div>
-                                UX Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="linked_pages/php_developer.html">
-                                <div class="menu-icons php-developer">
-                                  <img src="co_logo/menu_items/php.png" alt="PHP Developer">
-                                </div>
-                                PHP Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons chatbot">
-                                  <img src="co_logo/menu_items/chatbot.png" alt="Chatbot Developer">
-                                </div>
-                                Chatbot Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons drupal">
-                                  <img src="co_logo/menu_items/drupal.png" alt="Drupal Developer">
-                                </div>
-                                Drupal Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons iphone-developer">
-                                  <img src="co_logo/menu_items/iphone.jpg" alt="iPhone Developer">
-                                </div>
-                                iPhone Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons mean-stack">
-                                  <img src="co_logo/menu_items/mean-stack.jpg" alt="Mean Stack Developer">
-                                </div>
-                                MEAN Stack Developer
-                              </a>
-                            </li>
-                            <li style="margin-top: 30px;">
-                              <a href="#">
-                                <div class="menu-icons golang"> 
-                                  <img src="co_logo/menu_items/golang.png" alt="GoLang Developer">
-                                </div>
-                                GoLang Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons dot-net">
-                                  <img src="co_logo/menu_items/dot-net.png" alt="Dot Net Developer">
-                                </div>
-                                .Net Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons database">
-                                  <img src="co_logo/menu_items/database.jfif" alt="Database Developer">
-                                </div>
-                                Database Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons ico-developer">
-                                  <img src="co_logo/menu_items/ico-dev.png" alt="ICO Developer">
-                                </div>
-                                ICO Developer
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <div class="menu-icons xamarin-developer"> 
-                                  <img src="co_logo/menu_items/xamarin.jpg" alt="Xamarin Developer">
-                                </div>
-                                Xamarin Developer
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                      </div>
-                  </li>
-
-                </ul>
-
-
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="dev-service">
               <a class="nav-link" href="#about">DEVELOPMENT SERVICES</a>
-
-
-              <ul class="mega-dropdown desk-menu" style="display: none;"> 
-                <li class="row" style="padding-left : 6%;">
-                  <div>
-                    <div class="form-group">
-                      <div class="col-md-3"></div>
-                      <div class="col-md-6">
-                        <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
-                      </div>
-                      <div class="col-md-3"></div>
-                    </div>
-                    <div class="mega-col">
-                      <ul class="sub-heading-list">
-                        <li>
-                          <a href="#">
-                            <div></div>Android Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>AngularJS Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>D App Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>Software Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>WordPress Development Company
-                          </a>
-                        </li>
-                      </ul>
-
-                    </div>
-                    <div class="mega-col" style="margin-top: 10px;">
-                      <ul>
-                        <li>
-                          <a href="">
-                            <div></div>Drupal Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>iOS Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>Magento Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>Mobile App Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>Hybrid Development Company
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="mega-col" style="margin-top: 10px;">
-                      <ul>
-                        <li>
-                          <a href="">
-                            <div></div>NodeJS Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>Php Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>E Commerce Web Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>ReactJS Development Company
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <div></div>Web App Development Company
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </li>
-              </ul>
-              
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-4-home">HOW IT WORKS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#team">BLOG</a>
+              <a class="nav-link" href="#blog-home">BLOG</a>
             </li>
              <li class="nav-item">
               <a class="nav-link" href="linked_pages/career.html">CAREER</a>
@@ -647,6 +261,816 @@
         </div>
       </nav>
         </div>
+
+
+
+
+
+
+        <!--tech-pool-sub-nav-->
+        <div id="tech-pool-items"  style="display: none;" class="container">
+          <div class="row">
+            <div class="col-md-12 col" >
+              <div class="form-group">
+                
+                <div class="col-md-8 text-center" style="margin : 2rem auto;">
+                  <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
+                </div>
+            
+              </div>
+            </div>
+          </div>
+        <div class="row" id="main-sub-nav">
+            <div class="col-md-4 col" style="1px solid" >       
+                     <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="linked_pages/react_js_developer.html">
+                              <div class="menu_icons reactjs">
+                                <img src="co_logo/menu_items/react-js.png" alt="ReactJS">
+                                ReactJS Developer
+                              </div>
+                             
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/android_developer.html">
+                            <div class="menu_icons android">
+                             <img src="co_logo/menu_items/android.png" alt="Android Developer" class="img-fluid"> 
+                             Android Developer
+                              </div>
+                           
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/front_end_developer.html">
+                              <div class="menu_icons front-end">
+                                <img src="co_logo/menu_items/front-end.png" alt="Front-End Developer">  
+                                Front-End Developer
+                              </div>
+                          
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/angular_js_developer.html">
+                              <div class="menu_icons angularjs">
+                                <img src="co_logo/menu_items/angularjs.png" alt="AngularJS Developer">
+                                AngularJS Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/wordpress.html">
+                              <div class="menu_icons wordpress">
+                                <img src="co_logo/menu_items/wordpress.jpg" alt="WordPress Developer">
+                                Wordpress Developer
+                              </div>
+                              
+                             
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/java_script_developer.html">
+                              <div class="menu_icons javascript">
+                                <img src="co_logo/menu_items/javascript.svg" alt="JavaScript Developer">  
+                                JavaScript Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li style="margin-top: 30px;">
+                            <a href="linked_pages/hybrid_app_developer.html">
+                              <div class="menu_icons hybrid-app">
+                                <img src="co_logo/menu_items/hybrid.png" alt="Hybrid App Developer">  
+                                Hybrid App Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/phonegap_developer.html">
+                              <div class="menu_icons phonegap"> 
+                                <img src="co_logo/menu_items/phonegap.png" alt="Phonegap Developer">  
+                                Phonegap Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/ruby_on_rails_developer.html">
+                              <div class="menu_icons ruby-on-rails">
+                                <img src="co_logo/menu_items/ruby-on-rails.png" alt="Ruby On Rails">
+                                Ruby on Rails Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/ionic.html">
+                              <div class="menu_icons ionic">
+                                <img src="co_logo/menu_items/ionic.webp" alt="Ionic Developer">  
+                                Ionic Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/hire_test_engineer.html">
+                              <div class="menu_icons test-engineer">
+                                <img src="co_logo/menu_items/test-engineer.png" alt="Test Engineer">
+                                Test Engineer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                        </ul>
+                   
+                      <div class="clearfix"></div>
+            
+            </div>
+
+            <div class="col-md-4 col ">       
+              <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="linked_pages/ios_developer.html">
+                              <div class="menu_icons ios">
+                                <img src="co_logo/menu_items/ios.png" alt="iOS Developer">
+                                iOS Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/node_js_developer.html">
+                              <div class="menu_icons nodejs">
+                                <img src="co_logo/menu_items/nodejslogo.png" alt="NodeJS Developer">
+                                NodeJS Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/java_developer.html">
+                              <div class="menu_icons java">
+                                <img src="co_logo/menu_items/java.webp" alt="Java Developer">
+                                Java Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/python_developer.html">
+                              <div class="menu_icons python">
+                                <img src="co_logo/menu_items/python.jpg" alt="Python Developer">
+                                Python Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/iot_developer.html">
+                              <div class="menu_icons iot-developer">
+                                <img src="co_logo/menu_items/IOT.png" alt="IOT Developer">
+                                IoT Developer
+                              </div>
+                                
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/magento_developer.html">
+                              <div class="menu_icons magento">
+                                <img src="co_logo/menu_items/magento1.png" alt="Magento Developer">
+                                Magento Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/blockchain.html">
+                              <div class="menu_icons blockchain">
+                                <img src="co_logo/menu_items/bitcoin_dev.png" alt="Blockchain Developer">
+                                Blockchain Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li style="margin-top: 39px;">
+                            <a href="linked_pages/dev_ops_developer.html">
+                              <div class="menu_icons devops">
+                                <img src="co_logo/menu_items/devops.jpg" alt="DevOps Developer">
+                                DevOps Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/joomla_developer.html">
+                              <div class="menu_icons joomla">
+                                <img src="co_logo/menu_items/joomla.png" alt="Joomla Developer">
+                                Joomla Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/mobile_app_developer.html">
+                              <div class="menu_icons mobile-app">
+                                <img src="co_logo/menu_items/mobile-app.png" alt="Mobile App Developer">
+                                Mobile App Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/web_developer.html">
+                              <div class="menu_icons web-developer">
+                                <img src="co_logo/menu_items/web-developer.webp" alt="Web Developer">
+                                Web Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+               </ul>
+            </div>
+
+
+            <div class="col-md-4 col "> 
+                   
+                        <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="linked_pages/ui_ux_designer.html">
+                              <div class="menu_icons ux-developer">
+                                <img src="co_logo/menu_items/ux.png" alt="UX Developer">
+                                UX Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/php_developer.html">
+                              <div class="menu_icons php-developer">
+                                <img src="co_logo/menu_items/php.png" alt="PHP Developer">
+                                PHP Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/chatbot.html">
+                              <div class="menu_icons chatbot">
+                                <img src="co_logo/menu_items/chatbot.png" alt="Chatbot Developer">
+                                Chatbot Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/drupal_developer.html">
+                              <div class="menu_icons drupal">
+                                <img src="co_logo/menu_items/drupal.png" alt="Drupal Developer">
+                                Drupal Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/iphone_developer.html">
+                              <div class="menu_icons iphone-developer">
+                                <img src="co_logo/menu_items/iphone.jpg" alt="iPhone Developer">
+                                iPhone Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/mean_stack_developer.html">
+                              <div class="menu_icons mean-stack">
+                                <img src="co_logo/menu_items/mean-stack.jpg" alt="Mean Stack Developer">
+                                MEAN Stack Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li style="margin-top: 30px;">
+                            <a href="linked_pages/golang_developer.html">
+                              <div class="menu_icons golang"> 
+                                <img src="co_logo/menu_items/golang.png" alt="GoLang Developer">
+                                GoLang Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/dot_net_developer.html">
+                              <div class="menu_icons dot-net">
+                                <img src="co_logo/menu_items/dot-net.png" alt="Dot Net Developer">
+                                .Net Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/database_developer.html">
+                              <div class="menu_icons database">
+                                <img src="co_logo/menu_items/database.jfif" alt="Database Developer">
+                                Database Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/ico_developer.html">
+                              <div class="menu_icons ico-developer">
+                                <img src="co_logo/menu_items/ico-dev.png" alt="ICO Developer">
+                                ICO Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/xamarin.html">
+                              <div class="menu_icons xamarin-developer"> 
+                                <img src="co_logo/menu_items/xamarin.jpg" alt="Xamarin Developer">
+                                Xamarin Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                        </ul>
+                      
+                      <div class="clearfix"></div>
+            </div>
+              
+      
+             
+          </div>
+
+          </div> 
+
+       <!--   <div style="display: none;">
+
+              <ul class="mega-dropdown desk-menu" >
+                <li class="row" style="padding-left: 6%;">
+                    <div>                     
+                      <div class="mega-col row">
+                        <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons reactjs">
+                                <img src="co_logo/menu_items/react-js.png" alt="ReactJS">
+                                ReactJS Developer
+                              </div>
+                             
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                            <div class="menu_icons android">
+                             <img src="co_logo/menu_items/android.png" alt="Android Developer" class="img-fluid"> 
+                             Android Developer
+                              </div>
+                           
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons front-end">
+                                <img src="co_logo/menu_items/front-end.png" alt="Front-End Developer">  
+                                Front-End Developer
+                              </div>
+                          
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons angularjs">
+                                <img src="co_logo/menu_items/angularjs.png" alt="AngularJS Developer">
+                                AngularJS Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons wordpress">
+                                <img src="co_logo/menu_items/wordpress.jpg" alt="WordPress Developer">
+                                Wordpress Developer
+                              </div>
+                              
+                             
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons javascript">
+                                <img src="co_logo/menu_items/javascript.svg" alt="JavaScript Developer">  
+                                JavaScript Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li style="margin-top: 30px;">
+                            <a href="#">
+                              <div class="menu_icons hybrid-app">
+                                <img src="co_logo/menu_items/hybrid.png" alt="Hybrid App Developer">  
+                                Hybrid App Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons phonegap"> 
+                                <img src="co_logo/menu_items/phonegap.png" alt="Phonegap Developer">  
+                                Phonegap Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons ruby-on-rails">
+                                <img src="co_logo/menu_items/ruby-on-rails.png" alt="Ruby On Rails">
+                               
+                              </div>
+                              Ruby on Rails Developer
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons ionic">
+                                <img src="co_logo/menu_items/ionic.webp" alt="Ionic Developer">  
+                                Ionic Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons test-engineer">
+                                <img src="co_logo/menu_items/test-engineer.png" alt="Test Engineer">
+                                Test Engineer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mega-col row">
+                        <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons ios">
+                                <img src="co_logo/menu_items/ios.png" alt="iOS Developer">
+                                iOS Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons nodejs">
+                                <img src="co_logo/menu_items/nodejslogo.png" alt="NodeJS Developer">
+                                NodeJS Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/java_developer.html">
+                              <div class="menu_icons java">
+                                <img src="co_logo/menu_items/java.webp" alt="Java Developer">
+                                Java Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons python">
+                                <img src="co_logo/menu_items/python.jpg" alt="Python Developer">
+                                Python Developer  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons iot-developer">
+                                <img src="co_logo/menu_items/IOT.png" alt="IOT Developer">
+                                IoT Developer
+                              </div>
+                                
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons magento">
+                                <img src="co_logo/menu_items/magento1.png" alt="Magento Developer">
+                                Magento Developer
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons blockchain">
+                                <img src="co_logo/menu_items/bitcoin_dev.png" alt="Blockchain Developer">
+                                Blockchain Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li style="margin-top: 39px;">
+                            <a href="#">
+                              <div class="menu_icons devops">
+                                <img src="co_logo/menu_items/devops.jpg" alt="DevOps Developer">
+                                DevOps Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons joomla">
+                                <img src="co_logo/menu_items/joomla.png" alt="Joomla Developer">
+                                Joomla Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons mobile-app">
+                                <img src="co_logo/menu_items/mobile-app.png" alt="Mobile App Developer">
+                                Mobile App Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons web-developer">
+                                <img src="co_logo/menu_items/web-developer.webp" alt="Web Developer">
+                                Web Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mega-col row">
+                        <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons ux-developer">
+                                <img src="co_logo/menu_items/ux.png" alt="UX Developer">
+                                UX Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/php_developer.html">
+                              <div class="menu_icons php-developer">
+                                <img src="co_logo/menu_items/php.png" alt="PHP Developer">
+                                PHP Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons chatbot">
+                                <img src="co_logo/menu_items/chatbot.png" alt="Chatbot Developer">
+                                Chatbot Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons drupal">
+                                <img src="co_logo/menu_items/drupal.png" alt="Drupal Developer">
+                                Drupal Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons iphone-developer">
+                                <img src="co_logo/menu_items/iphone.jpg" alt="iPhone Developer">
+                                iPhone Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons mean-stack">
+                                <img src="co_logo/menu_items/mean-stack.jpg" alt="Mean Stack Developer">
+                                MEAN Stack Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li style="margin-top: 30px;">
+                            <a href="#">
+                              <div class="menu_icons golang"> 
+                                <img src="co_logo/menu_items/golang.png" alt="GoLang Developer">
+                                GoLang Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons dot-net">
+                                <img src="co_logo/menu_items/dot-net.png" alt="Dot Net Developer">
+                                .Net Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons database">
+                                <img src="co_logo/menu_items/database.jfif" alt="Database Developer">
+                                Database Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons ico-developer">
+                                <img src="co_logo/menu_items/ico-dev.png" alt="ICO Developer">
+                                ICO Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="menu_icons xamarin-developer"> 
+                                <img src="co_logo/menu_items/xamarin.jpg" alt="Xamarin Developer">
+                                Xamarin Developer
+                              </div>
+                              
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                </li>
+      
+              </ul>
+           
+        
+        </div> -->
+        
+
+        <!--tech-pool-sub-nav-->
+
+
+
+        <!--Development-service-sub-nav-->
+        <div id="dev-service-items" style="display: none;">
+          <ul class="mega-dropdown desk-menu" > 
+            <li class="row" style="padding-left : 6%;">
+              <div>
+                <div class="form-group">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
+                  </div>
+                  <div class="col-md-3"></div>
+                </div>
+                <div class="mega-col">
+                  <ul class="sub-heading-list">
+                    <li>
+                      <a href="#">
+                        <div></div>Android Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>AngularJS Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>D App Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>Software Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>WordPress Development Company
+                      </a>
+                    </li>
+                  </ul>
+  
+                </div>
+                <div class="mega-col" style="margin-top: 10px;">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div></div>Drupal Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>iOS Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>Magento Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>Mobile App Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>Hybrid Development Company
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-col" style="margin-top: 10px;">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <div></div>NodeJS Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>Php Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>E Commerce Web Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>ReactJS Development Company
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <div></div>Web App Development Company
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+       
+
+
+        <!--Development-service-sub-nav-->
 
         <!--Slider-->
 
