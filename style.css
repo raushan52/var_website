@@ -73,10 +73,12 @@ body {
     width: 100%;
 
 
+
  }
 
  #main-sub-nav>div>ul>li>a {
      color: #333;
+     line-height: 1.6rem;
  }
    
 
@@ -86,6 +88,20 @@ body {
     
  }
 
+ #tech-pool-items , #dev-service-items {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    background-color: white;
+    transition: left .5s linear;
+   
+     
+ }
+
+ 
 
 
 
@@ -94,7 +110,7 @@ body {
 
 
  /** Scroll to top **/
- a.scrolltotop {
+ #top {
      display: block;
      border: 1px solid white transparent;
      font-size: 20px;
@@ -106,6 +122,7 @@ body {
      text-align: center;
      width: 50px;
      z-index: 1000;
+     color: #f74600;
      
     
 

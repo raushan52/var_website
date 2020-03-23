@@ -34,6 +34,18 @@
         $("#web_and_full_stack").show("slide");
       
       });
+
+      $("#web_and_full_stack_menu").click(function(){
+        $("#web_and_full_stack_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      
+      });
+
+
+
       $("#mobility-menu").click(function(){
         $("#web_and_full_stack").hide();       
       });
@@ -54,6 +66,15 @@
         $("#mobility").show("slide");
       
       });
+      $("#mobility-menu").click(function(){
+        $("#mobility-menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      
+      });
+
       $("#web_and_full_stack_menu").click(function(){
         $("#mobility").hide();       
       });
@@ -74,6 +95,17 @@
         $("#e_commerce_and_cms").show("slide");
       
       });
+
+      $("#e_commerce_and_cms_menu").click(function(){
+        $("#e_commerce_and_cms_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      
+      });
+
+
       $("#web_and_full_stack_menu").click(function(){
         $("#e_commerce_and_cms").hide();       
       });
@@ -94,6 +126,17 @@
         $("#blockchain_and_ml").show("slide");
       
       });
+
+      $("#blockchain_and_ml_menu").click(function(){
+        $("#blockchain_and_ml_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      
+      });
+
+
       $("#web_and_full_stack_menu").click(function(){
         $("#blockchain_and_ml").hide();       
       });
@@ -115,6 +158,17 @@
         $("#others").show("slide");
       
       });
+
+      $("#others_menu").click(function(){
+        $("#others_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      
+      });
+
+
       $("#web_and_full_stack_menu").click(function(){
         $("#others").hide();       
       });
@@ -132,19 +186,54 @@
 
 
 
+
+
+
+
+
+
+
+
+
+    /** script for navigation **/
+
     $(document).ready(function(){
       $("#tech-pool").mouseover(function(){
-        $("#tech-pool-items").show("slide");
-        
+        $("#tech-pool-items").show("slide");      
       
       });
-      $("#tech-pool").mouseout(function(){  
-        $("#tech-pool-items").hide();  
+
+      $("#tech-pool-items").mouseover(function(){  
+        $("#tech-pool-items").show();  
       });  
+      $("#tech-pool-items").mouseout(function(){
+        $("#tech-pool-items").hide();
+      });
 
+      $("#dev-service").mouseover(function(){  
+        $("#tech-pool-items").hide();  
+      }); 
+
+      $("#how-it-works-nav").mouseover(function(){  
+        $("#tech-pool-items").hide();  
+      }); 
+
+      $("#blog-nav").mouseover(function(){  
+        $("#tech-pool-items").hide();  
+      }); 
       
+      $("#career-nav").mouseover(function(){  
+        $("#tech-pool-items").hide();  
+      }); 
+      $("#contact-nav").mouseover(function(){  
+        $("#tech-pool-items").hide();  
+      });
 
-    });
+      $(".navbar-brand").mouseover(function(){  
+        $("#tech-pool-items").hide();  
+      });
+
+     });
 
 
 
@@ -153,27 +242,53 @@
   $(document).ready(function(){  
     $("#dev-service").mouseover(function(){
         $("#dev-service-items").show("slide");
-        
+               
       
       });
-      $("#dev-service").mouseout(function(){  
-        $("#dev-service-items").hide();  
+      $("#dev-service-items").mouseover(function(){  
+        $("#dev-service-items").show();  
       });  
+      $("#dev-service-items").mouseout(function(){
+        $("#dev-service-items").hide();
+      });
+
+      $("#tech-pool").mouseover(function(){  
+        $("#dev-service-items").hide();  
+      }); 
+
+      $("#how-it-works-nav").mouseover(function(){  
+        $("#dev-service-items").hide();  
+      }); 
+
+      $("#blog-nav").mouseover(function(){  
+        $("#dev-service-items").hide();  
+      }); 
+      
+      $("#career-nav").mouseover(function(){  
+        $("#dev-service-items").hide();  
+      }); 
+      $("#contact-nav").mouseover(function(){  
+        $("#dev-service-items").hide();  
+      });
+      $(".navbar-brand").mouseover(function(){  
+        $("#dev-service-items").hide();  
+      });
 
 
       
     });
 
   
+        $(document).ready(function(){
+        $("#top").click( function() {
+          jQuery("body,html").animate({
+            scrollTop: 0
+          }, "smooth")
+        });
+        });
+    
 
-
-
-
-
-
-
-
-
+  
 
 
 
@@ -229,28 +344,28 @@
   <div class="container-fluid" style="top: 0; z-index: 100000; background-color: #161d28;" >
     <nav class="navbar navbar-expand-lg" >
        
-        <a class="navbar-brand" href="#"><img src="images/dev-logo.png" id="website-logo" class="img-fluid"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/dev-logo.png" id="website-logo" class="img-fluid"></a>
         <button class="navbar-toggler float-right " type="button" data-toggle="collapse" data-target="#navbarNav" >
           <span class="navbar-toggler-icon" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" id="tech-pool">
-              <a class="nav-link active" href="index.html">TECH POOL</a>
+              <a class="nav-link active" href="#">TECH POOL</a>
             </li>
             <li class="nav-item" id="dev-service">
-              <a class="nav-link" href="#about">DEVELOPMENT SERVICES</a>
+              <a class="nav-link" href="#">DEVELOPMENT SERVICES</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="how-it-works-nav">
               <a class="nav-link" href="#section-4-home">HOW IT WORKS</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="blog-nav">
               <a class="nav-link" href="#blog-home">BLOG</a>
             </li>
-             <li class="nav-item">
+             <li class="nav-item" id="career-nav">
               <a class="nav-link" href="linked_pages/career.html">CAREER</a>
             </li>
-             <li class="nav-item">
+             <li class="nav-item" id="contact-nav">
               <a class="nav-link" href="linked_pages/contact.html">CONTACT</a>
             </li>
             <!-- <li class="nav-item">
@@ -268,7 +383,7 @@
 
 
         <!--tech-pool-sub-nav-->
-        <div id="tech-pool-items"  style="display: none;" class="container">
+        <div id="tech-pool-items" class="container">
           <div class="row">
             <div class="col-md-12 col" >
               <div class="form-group">
@@ -281,7 +396,7 @@
             </div>
           </div>
         <div class="row" id="main-sub-nav">
-            <div class="col-md-4 col" style="1px solid" >       
+            <div class="col-md-4 col-sm-6 col">       
                      <ul class="sub-heading-list col-md-12 col">
                           <li>
                             <a href="linked_pages/react_js_developer.html">
@@ -396,7 +511,7 @@
             
             </div>
 
-            <div class="col-md-4 col ">       
+            <div class="col-md-4 col-sm-6 col ">       
               <ul class="sub-heading-list col-md-12 col">
                           <li>
                             <a href="linked_pages/ios_developer.html">
@@ -461,7 +576,7 @@
                           <li>
                             <a href="linked_pages/blockchain.html">
                               <div class="menu_icons blockchain">
-                                <img src="co_logo/menu_items/bitcoin_dev.png" alt="Blockchain Developer">
+                                <img src="co_logo/menu_items/blockchain-2.webp" alt="Blockchain Developer">
                                 Blockchain Developer
                               </div>
                               
@@ -507,7 +622,7 @@
             </div>
 
 
-            <div class="col-md-4 col "> 
+            <div class="col-md-4 col-sm-6 col "> 
                    
                         <ul class="sub-heading-list col-md-12 col">
                           <li>
@@ -963,7 +1078,196 @@
 
 
         <!--Development-service-sub-nav-->
-        <div id="dev-service-items" style="display: none;">
+
+        <div id="dev-service-items" class="container">
+          <div class="row">
+            <div class="col-md-12 col">
+              <div class="form-group">
+                
+                <div class="col-md-8 text-center" style="margin : 2rem auto;">
+                  <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
+                </div>
+            
+              </div>
+            </div>
+          </div>
+        <div class="row" id="main-sub-nav">
+            <div class="col-md-4 col">       
+                     <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="linked_pages/nodejs_development_company.html">
+                              <div class="menu_icons nodejs">
+                                <img src="co_logo/menu_items/nodejslogo.png" alt="NodeJS">
+                                NodeJs Developement Company
+                              </div>
+                             
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/php_development_company.html">
+                            <div class="menu_icons php">
+                             <img src="co_logo/menu_items/php.png" alt="php_development_company" class="img-fluid"> 
+                             PHP Developement Company
+                              </div>
+                           
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/e_commerce_web_development_comapany.html">
+                              <div class="menu_icons ec_comapany">
+                                <img src="co_logo/menu_items/magento1.png" alt="e_commerce_web_development_comapany">  
+                                 EC Web Developement Company
+                              </div>
+                          
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/reactjs_development_company.html">
+                              <div class="menu_icons reactjs">
+                                <img src="co_logo/menu_items/react-js.png" alt="ReactJS Developer">
+                                ReactJS Developement Company 
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/web_app_development_company.html">
+                              <div class="menu_icons web_app_development_company">
+                                <img src="co_logo/menu_items/joomla.png" alt="Web App Developer">
+                                  Web App Developement Company
+                              </div>
+                              
+                             
+                            </a>
+                          </li>
+
+                        </ul>
+                   
+                      <div class="clearfix"></div>
+            
+            </div>
+
+            <div class="col-md-4 col">       
+              <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="linked_pages/drupal_development_company.html">
+                              <div class="menu_icons drupal">
+                                <img src="co_logo/menu_items/drupal.png" alt="Drupal Developer">
+                                  Drupal Developement Company
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/ios_development_company.html">
+                              <div class="menu_icons ios">
+                                <img src="co_logo/menu_items/ios.png" alt="ios Developer">
+                                iOS Developement Company
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/magento_development_company.html">
+                              <div class="menu_icons magento">
+                                <img src="co_logo/menu_items/magento1.png" alt="Magento Developer">
+                                Magento Developement Company
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/mobile_app_development_company.html">
+                              <div class="menu_icons mobile-app">
+                                <img src="co_logo/menu_items/mobile-app.png" alt="mobile-app Developer">
+                                Mobile App Developement Company  
+                              </div>
+                              
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/hybrid_development_company.html">
+                              <div class="menu_icons hybrid_development_company">
+                                <img src="co_logo/menu_items/hybrid.png" alt="hybrid_development_company">
+                                Hybrid Developement Company
+                              </div>
+                                
+                              
+                            </a>
+                          </li>                        
+               </ul>
+            </div>
+
+
+            <div class="col-md-4 col"> 
+                   
+                        <ul class="sub-heading-list col-md-12 col">
+                          <li>
+                            <a href="linked_pages/android_development_company.html">
+                              <div class="menu_icons android">
+                                <img src="co_logo/menu_items/android.png" alt="android Developer">
+                                Android Developement Company
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/angularjs_development_company.html">
+                              <div class="menu_icons angularjs">
+                                <img src="co_logo/menu_items/angularjs.png" alt="AngularJS Developer">
+                                AngularJS Developement Company
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/d_app_development_company.html">
+                              <div class="menu_icons d_app">
+                                <img src="co_logo/menu_items/d_app.png" alt="D_App Developer">
+                                D App Developement Company
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/software_development_company.html">
+                              <div class="menu_icons software_development_company">
+                                <img src="co_logo/menu_items/software-dev.png" alt="Software Developer">
+                                Software Developement Company
+                              </div>
+                              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="linked_pages/wordpress_development_company.html">
+                              <div class="menu_icons wordpress">
+                                <img src="co_logo/menu_items/wordpress.jpg" alt="wordpress Developer">
+                                WordPress Developement Company
+                              </div>
+                              
+                            </a>
+                          </li>
+
+
+
+                        </ul>
+                      
+                      <div class="clearfix"></div>
+            </div>
+              
+      
+             
+          </div>
+
+          </div> 
+
+
+       <!-- <div id="dev-service-items" style="display: none;">
           <ul class="mega-dropdown desk-menu" > 
             <li class="row" style="padding-left : 6%;">
               <div>
@@ -1066,11 +1370,30 @@
               </div>
             </li>
           </ul>
-        </div>
-       
-
-
+        </div>   -->
+      
         <!--Development-service-sub-nav-->
+
+
+
+     
+
+
+        <!--End of header-->
+
+
+          
+     <!--Top Navigator-->
+   
+         <span id="top" class="btn">
+          <i class="fas fa-chevron-circle-up fa-3x"></i>
+         </span>
+      
+  
+    <!--End of Top Navigator-->
+
+
+        
 
         <!--Slider-->
 
@@ -1130,11 +1453,7 @@
 </div>
 
 
-<!--Top Navigator-->
-  <a href="#demo" class="scrolltotop" >
-    <i class="fas fa-chevron-circle-up fa-3x"></i>
-  </a>
-<!--End of Top Navigator-->
+
 
   
   
@@ -1162,8 +1481,8 @@
       <div class="row" >
         <div class="col-sm-12">
           <div class="row text-center" style="margin-bottom: 38px; background-color: white;">
-            <div class="col col-sm" id="cont-2-item-1" onclick="renderTechPool('web', 'web-btn')">
-              <div class="sec-2-img-div menu-title tab-active web-btn" id="web_and_full_stack_menu" >
+            <div class="col col-sm" id="cont-2-item-1">
+              <div class="sec-2-img-div menu-title tab-active" id="web_and_full_stack_menu" >
                 <img src="images/Fullfull stack-1.png" alt="full-stack">
                 <br>
                 
@@ -2836,6 +3155,11 @@
       </section>
 
     <!--End of Contact us && section 15-->
+
+
+
+
+
 
     <!--Footer-->
     <footer>
