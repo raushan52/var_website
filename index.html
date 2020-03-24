@@ -26,9 +26,32 @@
   <script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
+  <!--<script type="text/javascript">
+    jQuery().ready(function () {
+        $.get("preloader.html", function(data) {
+            jQuery("#preloader").html(data);
+        });
+    });
+    </script>   -->
+
+
+   <script>
+           /**   $(function(){
+                    $("#preloader").load("preloader.html"); 
+                    
+                  }); **?
+    </script>  
+
   
 
-  <script>
+  <script>      
+          $(window).on('load', function() {             
+            $('#preloader').fadeOut(); 
+            $('#preloader').delay(350).fadeOut('slow'); 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+
+
     $(document).ready(function(){
       $("#web_and_full_stack_menu").click(function(){
         $("#web_and_full_stack").show("slide");
@@ -278,6 +301,57 @@
       
     });
 
+
+
+
+    $(document).ready(function(){
+      $("#demo").mouseenter(function(){        
+        $("#top").fadeOut(300); 
+      });
+      $("#section-2-home").mouseenter(function(){
+        $("#top").fadeIn(300);
+      });
+      $("#section-4-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-5-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-6-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-7-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-8-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-9-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-10-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-11-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-12-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-13-container").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#blog-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#section-15-home").mouseenter(function(){
+        $("#top").show();
+      });
+      $("#footer-home").mouseenter(function(){
+        $("#top").show();
+      });
+
+    });
   
         $(document).ready(function(){
         $("#top").click( function() {
@@ -288,14 +362,11 @@
         });
     
 
-  
-
-
 
 
 </script>
 
-
+     
 
 <!--  <script>
       $(document).ready(function(){
@@ -338,10 +409,13 @@
     
 </head>
 <body>
-         
+
+  <div id="preloader"></div>
+    
+  <!--Header-->
   <!--navigation-->
   
-  <div class="container-fluid" style="top: 0; z-index: 100000; background-color: #161d28;" >
+  <header class="container-fluid" style="top: 0; z-index: 100000; background-color: #161d28;" >
     <nav class="navbar navbar-expand-lg" >
        
         <a class="navbar-brand" href="index.html"><img src="images/dev-logo.png" id="website-logo" class="img-fluid"></a>
@@ -375,7 +449,7 @@
           </ul>
         </div>
       </nav>
-        </div>
+    </header>
 
 
 
@@ -388,8 +462,8 @@
             <div class="col-md-12 col" >
               <div class="form-group">
                 
-                <div class="col-md-8 text-center" style="margin : 2rem auto;">
-                  <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
+                <div class="col-md-8 text-center" style="margin : 2rem auto">
+                  <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems" style="border-radius: 0; border: none; border-bottom: 1px solid #333;">
                 </div>
             
               </div>
@@ -1085,7 +1159,7 @@
               <div class="form-group">
                 
                 <div class="col-md-8 text-center" style="margin : 2rem auto;">
-                  <input class="form-control" type="text" placeholder="Your Search Requirenment" id="searchMenuItems">
+                  <input class="form-control" type="text" placeholder="Your Search Requirenment" style="border-radius: 0; border-radius: 0; border: none; border-bottom: 1px solid #333;">
                 </div>
             
               </div>
@@ -1376,16 +1450,17 @@
 
 
 
-     
-
-
         <!--End of header-->
+
+
+
+
 
 
           
      <!--Top Navigator-->
    
-         <span id="top" class="btn">
+         <span id="top" class="btn" style="display: none;" >
           <i class="fas fa-chevron-circle-up fa-3x"></i>
          </span>
       
@@ -1395,7 +1470,7 @@
 
         
 
-        <!--Slider-->
+<!--Slider-->
 
 <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -1452,13 +1527,13 @@
   </a>
 </div>
 
-
+<!--End of Slider-->
 
 
   
   
   <!-- section 2-->
-  <section>
+  <section id="section-2-home">
   
   <div class="container-fluid">
     <div class="row">
@@ -1549,7 +1624,7 @@
                 </a>
                 </div>
               </div> -->
-              <a href="linked_pages/angular_js_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/angular_js_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1562,7 +1637,7 @@
       
             </div>
             <div class="col col-md-3">
-              <a href="linked_pages/java_script_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/java_script_developer.html" class="section-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="images/logo-javascript.svg" width="60"><br>
@@ -1575,7 +1650,7 @@
       
             </div>
             <div class=" col col-md-3">
-              <a href="linked_pages/ui_ux_designer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/ui_ux_designer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="images/ux.jpg" width="60"> <br>
@@ -1587,7 +1662,7 @@
       
             </div>
             <div class="col col-md-3">
-              <a href="linked_pages/java_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/java_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="images/java.webp" width="60">
@@ -1602,7 +1677,7 @@
           </div>
           <div class="row text-center">
             <div class="col col-sm">
-              <a href="linked_pages/full_stack_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/full_stack_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="images/fullstack.webp" width="60"> <br>
@@ -1613,7 +1688,7 @@
               
             </div>
             <div class="col col-sm">
-              <a href="linked_pages/front_end_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/front_end_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="images/frontend.png" width="60"> <br>
@@ -1625,7 +1700,7 @@
 
             </div>
             <div class="col col-sm">
-              <a href="linked_pages/python_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/python_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="images/Product-Python.png" width="60"> <br>
@@ -1636,7 +1711,7 @@
               
             </div>
             <div class="col col-sm">
-              <a href="linked_pages/php_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/php_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="images/php.png" width="60"> <br>
@@ -1650,7 +1725,7 @@
   
           <div class="row text-center">
             <div class="col col-sm">
-              <a href="linked_pages/node_js_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/node_js_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="images/nodejs.webp" width="60"> <br>
@@ -1661,7 +1736,7 @@
              
               </div>
               <div class="col col-sm">
-                <a href="linked_pages/mean_stack_developer.html" class="secgtion-2-gd-box">
+                <a href="linked_pages/mean_stack_developer.html" class="section-2-gd-box">
                 <div class="sec-2-img-div"> 
                  
                     <img src="images/mean.jpg" width="60"> <br>
@@ -1673,7 +1748,7 @@
                 </div>
       
                 <div class="col col-sm">
-                  <a href="linked_pages/react_js_developer.html" class="secgtion-2-gd-box">
+                  <a href="linked_pages/react_js_developer.html" class="section-2-gd-box">
                   <div class="sec-2-img-div">
                   
                       <img src="images/react.png" width="60"> <br>
@@ -1685,7 +1760,7 @@
                   </div>
       
                   <div class="col col-sm">
-                    <a href="linked_pages/web_developer.html" class="secgtion-2-gd-box">
+                    <a href="linked_pages/web_developer.html" class="section-2-gd-box">
                     <div class="sec-2-img-div">
                       
                         <img src="images/web_developer.png" width="60"> <br>
@@ -1710,7 +1785,7 @@
           <div class="row text-center">
             <div class="col col-sm-3">
         
-              <a href="linked_pages/mobile_app_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/mobile_app_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1723,7 +1798,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/xamarin.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/xamarin.html" class="section-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/xamarin.jpg" width="60"><br>
@@ -1736,7 +1811,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/android_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/android_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/android.png" width="60"> <br>
@@ -1748,7 +1823,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/ios_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/ios_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="section_2_others_icons/apple.png" width="60">
@@ -1763,7 +1838,7 @@
           </div>
           <div class="row text-center">
             <div class="col col-sm-3">
-              <a href="linked_pages/ionic.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/ionic.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/ionic.webp" width="60"> <br>
@@ -1774,7 +1849,7 @@
               
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/iphone_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/iphone_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/iphone-dev.png" width="60"> <br>
@@ -1786,7 +1861,7 @@
 
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/phonegap_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/phonegap_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/phonegap.png" width="60"> <br>
@@ -1797,7 +1872,7 @@
               
             </div>
             <div class="col col-sm-3">
-            <!--  <a href="#" class="secgtion-2-gd-box">
+            <!--  <a href="#" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="images/php.png" width="60"> <br>
@@ -1821,7 +1896,7 @@
           <div class="row text-center">
             <div class="col col-sm-3">
        
-              <a href="linked_pages/wordpress.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/wordpress.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1834,7 +1909,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/magento_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/magento_developer.html" class="section-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/magento1.png" width="60"><br>
@@ -1847,7 +1922,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/drupal_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/drupal_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/hire-drupal.png" width="60"> <br>
@@ -1859,7 +1934,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/joomla_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/joomla_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="section_2_others_icons/hire-joomla.png" width="60">
@@ -1883,7 +1958,7 @@
           <div class="row text-center">
             <div class="col col-sm-3">
         
-              <a href="linked_pages/blockchain.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/blockchain.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1896,7 +1971,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/chatbot.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/chatbot.html" class="section-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/chatbot.png" width="60"><br>
@@ -1909,7 +1984,7 @@
       
             </div>
             <div class="col col-sm-3">
-            <!--  <a href="#" class="secgtion-2-gd-box">
+            <!--  <a href="#" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="images/ux.jpg" width="60"> <br>
@@ -1922,7 +1997,7 @@
       
             </div>
             <div class="col col-sm-3">
-             <!-- <a href="#" class="secgtion-2-gd-box">
+             <!-- <a href="#" class="section-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="images/java.webp" width="60">
@@ -1948,7 +2023,7 @@
           <div class="row text-center">
             <div class="col col-sm-3">
         
-              <a href="linked_pages/hybrid_app_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/hybrid_app_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
               
             
@@ -1961,7 +2036,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/iot_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/iot_developer.html" class="section-2-gd-box">
                 <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/iot.png" width="60"><br>
@@ -1974,7 +2049,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/dev_ops_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/dev_ops_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/devops.jpg" width="60"> <br>
@@ -1986,7 +2061,7 @@
       
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/database_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/database_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
              
                   <img src="section_2_others_icons/database.jpg" width="60">
@@ -2001,7 +2076,7 @@
           </div>
           <div class="row text-center">
             <div class="col col-sm-3">
-           <!--   <a href="#" class="secgtion-2-gd-box">
+           <!--   <a href="#" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="images/fullstack.webp" width="60"> <br>
@@ -2013,7 +2088,7 @@
               
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/ico_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/ico_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/ico.jpg" width="60"> <br>
@@ -2025,7 +2100,7 @@
 
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/golang_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/golang_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                 
                   <img src="section_2_others_icons/golang.png" width="60"> <br>
@@ -2036,7 +2111,7 @@
               
             </div>
             <div class="col col-sm-3">
-              <a href="linked_pages/dot_net_developer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/dot_net_developer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/net.png" width="60"> <br>
@@ -2050,7 +2125,7 @@
   
           <div class="row text-center">
             <div class="col col-sm-3">
-              <a href="linked_pages/hire_test_engineer.html" class="secgtion-2-gd-box">
+              <a href="linked_pages/hire_test_engineer.html" class="section-2-gd-box">
               <div class="sec-2-img-div">
                
                   <img src="section_2_others_icons/test-eng.png" width="60"> <br>
@@ -2061,7 +2136,7 @@
              
               </div>
               <div class="col col-sm-3">
-                <a href="linked_pages/ruby_on_rails_developer.html" class="secgtion-2-gd-box">
+                <a href="linked_pages/ruby_on_rails_developer.html" class="section-2-gd-box">
                 <div class="sec-2-img-div"> 
                  
                     <img src="section_2_others_icons/rubyonrails.png" width="60"> <br>
@@ -2073,7 +2148,7 @@
                 </div>
       
                 <div class="col col-sm-3">
-                 <!-- <a href="#" class="secgtion-2-gd-box">
+                 <!-- <a href="#" class="section-2-gd-box">
                   <div class="sec-2-img-div">
                   
                       <img src="images/react.png" width="60"> <br>
@@ -2086,7 +2161,7 @@
                   </div>
       
                   <div class="col col-sm-3">
-                  <!--  <a href="#" class="secgtion-2-gd-box">
+                  <!--  <a href="#" class="section-2-gd-box">
                     <div class="sec-2-img-div">
                       
                         <img src="images/web_developer.png" width="60"> <br>
@@ -2202,7 +2277,7 @@
 
 
     <!-- Start of Section 5-->
-    <section style="background-color: #f4f4f4;" class="section section-no-border mb-none">
+    <section style="background-color: #f4f4f4;" class="section section-no-border mb-none" id="section-5-home">
     <div class="container" >
       <div class="row">
         <div class="col-md-12 text-center">
@@ -2323,7 +2398,7 @@
 
     <!-- Start of Section 6-->
 
-    <section  class="section section-no-border mb-none">
+    <section  class="section section-no-border mb-none" id="section-6-home">
     
     <div class="container" style="margin : 0 auto;">
       <div class="row">
@@ -2451,7 +2526,7 @@
     <!--End of Section 6-->
 
     <!--Start of Section 7-->
-    <section style="background-color: #f4f4f4;" class=" section section-no-border mb-none">
+    <section style="background-color: #f4f4f4;" class=" section section-no-border mb-none" id="section-7-home">
         <div class="container">
           <div class="row mb-4">
             <div class="col-md">
@@ -2586,7 +2661,7 @@
     <!--End of section 7-->
 
     <!--Start of Section 8-->
-    <section  class="section section-no-border mb-none">
+    <section  class="section section-no-border mb-none" id="section-8-home">
       <div class="container">
         <div class="row">
           <div class="col-md-8"> 
@@ -2634,7 +2709,7 @@
     <!--End of Section 8-->
 
     <!-- Start of section 9-->
-    <section style="background-color : #f4f4f4;" class=" section section-no-border mb-none">
+    <section style="background-color : #f4f4f4;" class=" section section-no-border mb-none" id="section-9-home">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -2674,7 +2749,7 @@
     <!--End of section 9-->
 
     <!-- Start of section 10-->
-      <section class="section section-no-border mb-none">
+      <section class="section section-no-border mb-none" id="section-10-home">
         <div class="container">
           <div class="row text-center">
             <div class="col-md-12 center">
@@ -2829,7 +2904,7 @@
    
 
     <!-- section 11  -----   slide crosel arif-->
-      <section class="section section-no-border" style="background-color: #e7e7e7;">
+      <section class="section section-no-border" style="background-color: #e7e7e7;" id="section-11-home">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -2872,7 +2947,7 @@
     <!-- End of section 11 -------  End of corousel arif-->
 
     <!--Start of section 12-->
-        <section class="section-12 section section-no-border">
+        <section class="section-12 section section-no-border" id="section-12-home">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
@@ -3066,7 +3141,7 @@
     <!--End of Blogs && section 14-->
 
     <!--Start Contact us && section 15-->
-      <section style="padding: 50px;" class="section section-no-border mb-none">
+      <section style="padding: 50px;" class="section section-no-border mb-none" id="section-15-home">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6">
@@ -3120,10 +3195,10 @@
                       <div class="row">
                         <!--<div class="form-group"> -->
                           <div class="col-md-6">
-                            <input id="email" type="email" value="" placeholder="Email" name="email" maxlength="100" class="form-control">
+                            <input id="email" type="email" value="" placeholder="Email" name="email" maxlength="100" class="form-control" style="border-radius: 0;">
                           </div>
                           <div class="col-md-6">
-                            <input id="phone" type="text" value="" placeholder="Phone number" name="phone" maxlength="20" class="form-control">
+                            <input id="phone" type="text" value="" placeholder="Phone number" name="phone" maxlength="20" class="form-control" style="border-radius: 0;"> 
                           </div>
                         </div>
       
@@ -3132,7 +3207,7 @@
                       <div class="row">
                        <!-- <div class="form-group"> -->
                           <div class="col-md-12 mb-3">
-                            <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" name="message"></textarea>
+                            <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" name="message" style="border-radius: 0;"></textarea>
                           </div>
                         </div>
                       <!-- </div> -->
@@ -3162,7 +3237,7 @@
 
 
     <!--Footer-->
-    <footer>
+    <footer id="footer-home">
       <div class="foot-line" style="background-color: #161d28; color : white; position: static; top: 0;">
         <div class="container">
           <div class="row">

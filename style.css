@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    line-height: 22px;
 }
 .carousel-inner img {
     width: 100%;
@@ -16,6 +17,23 @@ body {
     width: 70%;
     
 }
+
+
+/** preloader  **/
+
+#preloader {
+    position: absolute;  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;   
+    z-index: 99;
+   
+  }
+
+
+/** preloader  **/
 
 
 
@@ -79,6 +97,8 @@ body {
  #main-sub-nav>div>ul>li>a {
      color: #333;
      line-height: 1.6rem;
+     text-decoration: none !important;
+    
  }
    
 
@@ -106,13 +126,16 @@ body {
 
 
 
+/*------------------------------
+    11. SCROLL TO TOP
+-------------------------------*/
 
 
 
- /** Scroll to top **/
  #top {
+  
      display: block;
-     border: 1px solid white transparent;
+     border: 1px solid transparent;
      font-size: 20px;
      height: 50px;
      padding-top: 5px;
@@ -123,11 +146,17 @@ body {
      width: 50px;
      z-index: 1000;
      color: #f74600;
-     
-    
-
  }
- /** Scroll to top **/
+
+
+ #top:hover {
+    color: #ffbf00;
+    
+ }
+
+ /*------------------------------
+    11. SCROLL TO TOP
+-------------------------------*/
 
 
 
@@ -384,7 +413,8 @@ footer {
 }
 
 .section-2-gd-box {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #333;
 }
 
 .blog-button {
@@ -526,16 +556,41 @@ label {
 
 .mb-java {
     margin-bottom: 20px !important;
-    font-size: 14px !important;
+    font-size: 1rem !important;
     line-height: 20px;
     color : #022C3E !important;
 }
+
+.java-feature-box {
+    padding: 1rem;
+
+}
+
+
+.java-feature-box h4 {
+    margin : 0;
+    padding: 0;
+
+    
+
+}
+.java-feature-box span {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
 
 
 /** section 4 **/
 .java_span_h4 {
     font-size: 60px;
+    font-weight: bold;
     color: #4ba7f4;
+  
+    
 }
 
 .java_sec_4_img_div {
@@ -563,7 +618,7 @@ label {
 }
 
 .java_sec_4_img_div + div>p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -705,10 +760,29 @@ label {
 }
 
 
+.faq-row-div {
+    background-color: #33ccff !important;
+    padding: 10px 15px;
+}
+.faq-sub-heading>span {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.faq-main-div {
+    margin-bottom: 10px;
+}
+
+.faq-content {
+    display: none;
+}
+
 
 /** for font awesome check-circle icons **/
 .fa-check-circle {
  color: #33ccff;
+ 
 }
 
 
