@@ -10,6 +10,8 @@ Ico_developer
 minor chages in:-  
 
 iOS_developer
+ico developer
+test engineer
 
 
 # blockchain & ml
