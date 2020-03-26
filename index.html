@@ -26,13 +26,13 @@
   <script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
-  <!--<script type="text/javascript">
+  <script type="text/javascript">
     jQuery().ready(function () {
         $.get("preloader.html", function(data) {
             jQuery("#preloader").html(data);
         });
     });
-    </script>   -->
+    </script>  
 
 
    <script>
@@ -419,9 +419,9 @@
     <nav class="navbar navbar-expand-lg" >
        
         <a class="navbar-brand" href="index.html"><img src="images/dev-logo.png" id="website-logo" class="img-fluid"></a>
-        <button class="navbar-toggler float-right " type="button" data-toggle="collapse" data-target="#navbarNav" >
-          <span class="navbar-toggler-icon" ></span>
-        </button>
+       <!-- <button class="navbar-toggler float-right " type="button" data-toggle="collapse" data-target="#navbarNav" >
+          <span class="navbar-toggler-icon" style="color : #333;" ></span>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" id="tech-pool">
@@ -3084,23 +3084,28 @@
                   we share</h3>
                   <a href="#" class="btn btn-lg btn-primary">READ ALL</a>
               </div>
-              <div class="col-md-9 col-sm-12 col-xs-12 marginbottom30">
-                <div class="container">
-                  <div class="row">
-                <div class="col-md-4 col-sm-6 col container-blog">
-                  <a href="#"><img src="images/blog-1.jpg" class="image-responsive center-block" height="250" width="100%"></a>
-                  <div class="blog-content">
-                    <h4 class="h4-line">-</h4>
-                      <p class="blog-text">
-                        <a href="#" class="blog-co-link">INSIGHTS</a>
-                      </p>
-                      <a href="#">
-                        <h4 class="mb-sm h4-bc">The Ultimate guide to understanding Blockchain and Cryprocurrency</h4>
-                        <img src="images/bt_blog.png" class="image-responsive blog-button ">
-                      </a>
+              <div class="col-md-9 col-sm-12 col-xs-12 mb-3">
+           <div class="container">
+             <div class="row" style="padding: 1rem;">
+                <div class="col container-blog" style="border: 1px solid #fff ; padding: 0; margin: 0; margin-right: 2%; box-sizing: border-box;">      
+                       <a href="#"><img src="images/blog-1.jpg" class="img-fluid center-block" height="250" width="100%"></a>
+                    <div class="blog-content" style="padding-bottom: 0.5rem;">
+                      <h4 class="h4-line" style="margin: 0;">-</h4>
+                        <p class="blog-text">
+                          <a href="#" class="blog-co-link">INSIGHTS</a>
+                        </p>
+                        <a href="#">
+                          <h4 class="mb-sm h4-bc">The Ultimate guide to understanding Blockchain and Cryprocurrency</h4>
+                          <img src="images/bt_blog.png" class="img-fluid blog-button ">
+                        </a>
+
+                    </div>
+                      
+                    
                   </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col container-blog">
+                 
+                
+                <div class=" col container-blog" style="border: 1px solid #fff ; padding: 0; margin: 0;  margin-right: 2%; box-sizing: border-box;">
                   <a href="#">
                     <img src="images/blog-2.jpg" class="img-fluid center-block" height="250" width="100%">
                   </a>
@@ -3115,7 +3120,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col container-blog">
+                <div class=" col container-blog" style="border: 1px solid #fff ; padding: 0; margin: 0;  margin-right: 2%; box-sizing: border-box;">
                   <a href="#">
                     <img src="images/blog-3.jpg" class="img-fluid center-block" height="250" width="100%">
                   </a>
@@ -3129,6 +3134,7 @@
                       <img src="images/bt_blog.png" class="img-fluid blog-button">
                     </a>
                   </div>
+                </div>
                 </div>
                 </div>
               </div>
@@ -3185,7 +3191,7 @@
                         <div class="row">
                           <!--<div class="form-group"> -->
                             <div class="col-md-12">
-                              <input id="name" type="text" value="" name="name" placeholder="Your Name" class="form-control" maxlength="100" data-msg-required="Please enter your name.">
+                              <input id="name" type="text" value="" name="name" placeholder="Your Name" class="form-control" maxlength="100" data-msg-required="Please enter your name." style="border: none; border-bottom: 1px solid #333;">
                             </div>
                           </div>
                        <!-- </div> -->
@@ -3195,10 +3201,10 @@
                       <div class="row">
                         <!--<div class="form-group"> -->
                           <div class="col-md-6">
-                            <input id="email" type="email" value="" placeholder="Email" name="email" maxlength="100" class="form-control" style="border-radius: 0;">
+                            <input id="email" type="email" value="" placeholder="Email" name="email" maxlength="100" class="form-control" style="border-radius: 0;" style="border: none; border-bottom: 1px solid #333;">
                           </div>
                           <div class="col-md-6">
-                            <input id="phone" type="text" value="" placeholder="Phone number" name="phone" maxlength="20" class="form-control" style="border-radius: 0;"> 
+                            <input id="phone" type="text" value="" placeholder="Phone number" name="phone" maxlength="20" class="form-control" style="border-radius: 0;"     style="border: none; border-bottom: 1px solid #333;"> 
                           </div>
                         </div>
       
@@ -3207,7 +3213,7 @@
                       <div class="row">
                        <!-- <div class="form-group"> -->
                           <div class="col-md-12 mb-3">
-                            <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" name="message" style="border-radius: 0;"></textarea>
+                            <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" name="message" style="border-radius: 0;"  style="border: none; border-bottom: 1px solid #333;"></textarea>
                           </div>
                         </div>
                       <!-- </div> -->

@@ -20,10 +20,32 @@
    <script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
 
      <!--jquery CDN -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+     <script type="text/javascript">
+        jQuery().ready(function () {
+            $.get("preloader.html", function(data) {
+                jQuery("#preloader").html(data);
+            });
+        });
+       
+        </script>  
 
      <!--Header and Footer-->
+     
+
+     
+
+
      <script> 
+
+        $(document).ready(function(){
+                    $(window).on('load', function() {             
+                    $('#preloader').fadeOut(); 
+                    $('#preloader').delay(350).fadeOut('slow'); 
+                    $('body').delay(350).css({'overflow':'visible'});
+                })
+            });
          $(function(){
            $("#header").load("header.html"); 
            $("#faq").load("faq.html");
@@ -39,7 +61,7 @@
 
 </head>
 <body>
-
+    <div id="preloader"></div>
 <!--Header-->
     <div id="header"></div>
 <!--End of Header-->
