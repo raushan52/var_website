@@ -56,3 +56,44 @@ html, body{
     max-height: 700px;
 }
 
+
+/* media query */
+
+
+@media all and (max-width : 768px){
+
+
+    .carousel-caption>div h1 {
+        font-size: 20px !important;
+    }
+
+    .carousel-caption>div h3 {
+        font-size: 15px !important;
+    }
+    .btn {
+        line-height: 20px !important;
+    }
+}
+
+
+@media all and (max-width : 340px){
+    .carousel-caption{
+        position: relative;
+        top: 25px;
+        border: 1px solid rec;
+    }
+}
+
+@media all and (max-width : 479px){
+    body{
+        font-size: 12px !important;
+    }
+    .carousel-caption {
+        position: relative;
+        top: 50%;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    
+}

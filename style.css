@@ -834,16 +834,35 @@ label {
     padding: 2rem;
 }
 
+#homepage-header {
+    top: 0;
+    
+    background-color: #161d28;
+}
+
 
 
 /** Media Query for header **/
-@media screen and (max-width : 968px){
-    header {
-       background-color: lightblue;
+@media all and (max-width : 968px){
+    #homepage-header {
+      background: #4c4c4c;
+      
     }
     
-    #website-logo + button {
-        color: #fff;
-        border : 1px solid red;
+    
+   #nav-side-btn {
+       
     }
+}
+
+@media screen and (max-width : 510px) {
+    #website-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 420px){
+    h1, .h1 {
+        font-size: 1rem;
+    }    
 }
