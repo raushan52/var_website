@@ -853,6 +853,49 @@ label {
    #nav-side-btn {
        
     }
+
+    html .heading-dark {
+        line-height: 20px;
+        font-weight: 600 !important;
+        font-family: Montserrat-Light;
+        font-size: 20px;
+        color: #033 !important;
+    }
+
+    .sub-heading-dark {
+        color: #033 !important;
+        font-size: 10px;
+        font-family: Montserrat-Light;
+        font-weight: 500 !important;
+    
+    }
+    .sub-heading-content {
+        font-size: 16px;
+    }
+
+    .mb-sm {
+        margin-bottom: 6px !important;
+    }
+    html h4 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    html h3 {
+        font-size: 16px;
+    }
+    html p {
+        font-size: 14px;
+    }
+
+    .section-6-img, .section-12-img, .section-8-img, .section-9-img, .blog-home-img, .get-in-touch-img {
+        display: none;
+    }
+    .footer-entry {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+    }
+     
 }
 
 @media screen and (max-width : 510px) {
