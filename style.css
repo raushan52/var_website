@@ -8,7 +8,16 @@ body {
     margin: 0;
     padding: 0;
     line-height: 22px;
+    overflow-x : hidden;
 }
+html .container {
+    
+    
+   
+    
+}
+
+
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -124,6 +133,7 @@ body {
  }
 
  
+ 
 
 
 
@@ -186,13 +196,15 @@ body {
 
 
 .section_5_box {
+    display: flex;
+    flex-direction: row;
    
     
 }
 
 .section_5_logo {
   background-color:#33ccff;
-  padding : 18px;
+  padding : 1.12rem;
   border-radius: 50%;
   border: 2px solid;  
   margin-top : auto;  
@@ -330,7 +342,7 @@ html .heading-dark {
     font-family: Montserrat-semibold !important;
 }
 .mb-sm {
-    margin-bottom: 10px !important;
+    margin-bottom: .8rem !important;
 }
 
 .blog-co-link {
@@ -383,7 +395,7 @@ html .heading-dark {
 }
 
 .section-4-img {
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
 .section-4-title {
@@ -391,8 +403,7 @@ html .heading-dark {
 }
 
 #section-6-button {
-    float: left;
-    margin-left: 25px;
+   
 }
 ul.contact {
     margin-top: 5%;
@@ -411,7 +422,7 @@ ul.contact {
 
 .content {
     height: 45px;
-    margin-left: 70px;
+    margin-left: 10%;
 }
 
 .cell-view {
@@ -840,6 +851,11 @@ label {
     background-color: #161d28;
 }
 
+#featured-on-container{
+    padding: 5%;
+}
+
+
 
 
 /** Media Query for header **/
@@ -895,12 +911,31 @@ label {
         align-content: center;
         flex-direction: row;
     }
+
+    .mg-kk + .home-button {
+        font-size: 10px;
+        justify-content: center;
+        margin-left: 0;
+    }
+   #section-6-button {
+        font-size: 10px;
+        justify-content: center;
+        margin-left: 0;
+       
+    }
+    .section {
+        padding: 3%;
+    }
      
 }
 
 @media screen and (max-width : 510px) {
     #website-logo {
         display: none;
+    }
+
+    .section {
+        padding: 2%;
     }
 }
 

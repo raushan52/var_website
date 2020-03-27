@@ -12,6 +12,8 @@
         $phone = $_POST["phone"];
         $message = $_POST["message"];
 
+        echo ($name);
+
     ?>
 
 </body>
