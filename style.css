@@ -277,7 +277,7 @@ html .heading-dark {
 }
 
 #big-img { 
-    height: 100%;
+    width: 100%;
     position: absolute;
     right: 0;
 
@@ -285,13 +285,18 @@ html .heading-dark {
 }
 #section-6-img {
     float: left;
-    height: 500px;
+    width: 100%;
+    vertical-align: middle;
     position: absolute;
-    right: -50px;
+    right: 0;
+    bottom: 0;
+   
 }
+
 #section-9-img {
     position: absolute;
-    right: -50px;
+    right: 0;
+    width: 100%;
     vertical-align: middle;
 }
 .section-12 {
@@ -364,7 +369,7 @@ html .heading-dark {
 }
 .sub-heading-dark {
     color: #033 !important;
-    font-size: 15px;
+    font-size: 0.93rem;
     font-family: Montserrat-Light;
     font-weight: 700 !important;
 
@@ -403,6 +408,7 @@ html .heading-dark {
 }
 
 #section-6-button {
+    margin: 0 auto;
    
 }
 ul.contact {
@@ -914,7 +920,9 @@ label {
 
     .mg-kk + .home-button {
         font-size: 10px;
-        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;        
         margin-left: 0;
     }
    #section-6-button {
@@ -924,18 +932,32 @@ label {
        
     }
     .section {
-        padding: 3%;
+        padding: 8%;
     }
      
 }
 
+
+@media screen and (max-width : 1340px){
+    #java_section_1_form{
+        border-radius: 0%;
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width : 768px){
+    #java_section_1_form{
+        border-radius: 0%;
+        margin-top: 15%;
+    }
+}
 @media screen and (max-width : 510px) {
     #website-logo {
         display: none;
     }
 
     .section {
-        padding: 2%;
+        padding: 5%;
     }
 }
 
