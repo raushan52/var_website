@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
 <?php
 include 'config.php'; // store your configuration in a seperate file so 
                       // you only need to update it once when your environment changes
@@ -22,7 +15,7 @@ if (!$con = new mysqli(DBHOST,DBUSER,DBPASS,DBNAME)){
 
 
 if (!$errors){
-   //should validate/clean $_POST before using in query
+   //should validate/clean $_POST before using in query 
    $name = $con->escape_string($_POST['your_name']);  
    $email = $con->escape_string($_POST['your_email']);
    $mobile = $con->escape_string($_POST['your_phone']);   
@@ -51,17 +44,3 @@ if (!$errors){
 }
 echo $output;
 ?>
-
-<?php 
-
-pre_r($_POST);
-
-    function pre_r($array){
-        echo '<pre>';
-        print_r($array);
-        echo '</pre>';
-    }
-
-?>
-</body>
-</html>
