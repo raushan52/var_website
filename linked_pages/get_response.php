@@ -7,8 +7,8 @@ if((isset($_POST['your_name'])&& $_POST['your_name'] !='') && (isset($_POST['you
 $yourName = $conn->real_escape_string($_POST['your_name']);
     $yourEmail = $conn->real_escape_string($_POST['your_email']);
     $yourPhone = $conn->real_escape_string($_POST['your_phone']);
-    $comments = $conn->real_escape_string($_POST['your_message']);
-    $sql="INSERT INTO contact_form_info (name, email, phone, message) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$yourmessage."')";
+    $yourmessage = $conn->real_escape_string($_POST['your_message']);
+    $sql="INSERT INTO contact_form_info (yourname, email, phone, yourmessage) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$yourmessage."')";
     if(!$result = $conn->query($sql)){
     die('There was an error running the query [' . $conn->error . ']');
     }

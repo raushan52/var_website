@@ -32,7 +32,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6">
-              <img src="../images/contact.png" alt="contact" style="margin-left: -250px; float: left;">
+              <img src="../images/contact.png" alt="contact" style="margin-left: -250px; float: left;" class="get-in-touch-img">
               <h2 class="heading-dark">GET IN TOUCH</h2>
               <h6 class="sub-heading-dark">WE'D LOVE TO HEAR FROM YOU!</h6>
               <ul class="contact" id="contact-items" >
@@ -67,7 +67,7 @@
             </div>
             <div class="col-md-6 col-sm-6">
                
-                    <form>
+                    <form action="form.php" method="POST" class="contact-form"> 
                       <div class="container ">
                         <div class="row">
                           <!--<div class="form-group"> -->
@@ -107,6 +107,44 @@
                       </div>
                     </div>
                     </form>
+                    <script>
+                      $(document).ready(function(){
+                      $(".contact-form").on("submit",function(e){
+                      e.preventDefault();
+                      if($(".contact-form [name='your_name']").val() === '')
+                      {
+                      $(".contact-form [name='your_name']").css("border","1px solid red");
+                      }
+                      else if ($(".contact-form [name='your_email']").val() === '')
+                      {
+                      $(".contact-form [name='your_email']").css("border","1px solid red");
+                      }
+                      else
+                      {
+                      $("#loading-img").css("display","block");
+                      var sendData = $( this ).serialize();
+                      $.ajax({
+                      type: "POST",
+                      url: "form.php",
+                      data: sendData,
+                      success: function(data){
+                      $("#loading-img").css("display","none");
+                      $(".response_msg").text(data);
+                      $(".response_msg").slideDown().fadeOut(3000);
+                      $(".contact-form").find("input[type=text], input[type=email], textarea").val("");
+                      }
+                      });
+                      }
+                      });
+                      $(".contact-form input").blur(function(){
+                      var checkValue = $(this).val();
+                      if(checkValue != '')
+                      {
+                      $(this).css("border","1px solid #eeeeee");
+                      }
+                      });
+                      });
+                      </script>
 
               
             </div>
