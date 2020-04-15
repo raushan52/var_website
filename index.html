@@ -7,405 +7,17 @@
      <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
     <link rel="stylesheet" type="text/css" href="style2.css">
   <link rel="stylesheet" type="text/css" href="animate.css">
   <link rel="stylesheet" type="text/css" href="owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="owl.theme.default.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      
-    });
-  </script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   
-  <script type="text/javascript" src="jqury.js"></script>
-  <script type="text/javascript" src="owl.carousel.js"></script>
-  <script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-
-  <script type="text/javascript">
-    jQuery().ready(function () {
-        $.get("preloader.html", function(data) {
-            jQuery("#preloader").html(data);
-        });
-    });
-    </script>  
-
-
-   <script>
-           /**   $(function(){
-                    $("#preloader").load("preloader.html"); 
-                    
-                  }); **?
-    </script>  
-
   
-
-  <script>      
-          $(window).on('load', function() {             
-            $('#preloader').fadeOut(); 
-            $('#preloader').delay(350).fadeOut('slow'); 
-            $('body').delay(350).css({'overflow':'visible'});
-          })
-
-
-    $(document).ready(function(){
-      $("#web_and_full_stack_menu").click(function(){
-        $("#web_and_full_stack").show("slide");
-      
-      });
-
-      $("#web_and_full_stack_menu").click(function(){
-        $("#web_and_full_stack_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
-        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-      
-      });
-
-
-
-      $("#mobility-menu").click(function(){
-        $("#web_and_full_stack").hide();       
-      });
-      $("#e_commerce_and_cms_menu").click(function(){
-        $("#web_and_full_stack").hide();       
-      });
-      $("#blockchain_and_ml_menu").click(function(){
-        $("#web_and_full_stack").hide();
-      });
-      $("#others_menu").click(function(){
-        $("#web_and_full_stack").hide();
-      });
-    });
-
-
-    $(document).ready(function(){
-      $("#mobility-menu").click(function(){
-        $("#mobility").show("slide");
-      
-      });
-      $("#mobility-menu").click(function(){
-        $("#mobility-menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
-        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-      
-      });
-
-      $("#web_and_full_stack_menu").click(function(){
-        $("#mobility").hide();       
-      });
-      $("#e_commerce_and_cms_menu").click(function(){
-        $("#mobility").hide();       
-      });
-      $("#blockchain_and_ml_menu").click(function(){
-        $("#mobility").hide();
-      });
-      $("#others_menu").click(function(){
-        $("#mobility").hide();
-      });
-    });
-
-
-    $(document).ready(function(){
-      $("#e_commerce_and_cms_menu").click(function(){
-        $("#e_commerce_and_cms").show("slide");
-      
-      });
-
-      $("#e_commerce_and_cms_menu").click(function(){
-        $("#e_commerce_and_cms_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
-        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-      
-      });
-
-
-      $("#web_and_full_stack_menu").click(function(){
-        $("#e_commerce_and_cms").hide();       
-      });
-      $("#mobility-menu").click(function(){
-        $("#e_commerce_and_cms").hide();       
-      });
-      $("#blockchain_and_ml_menu").click(function(){
-        $("#e_commerce_and_cms").hide();
-      });
-      $("#others_menu").click(function(){
-        $("#e_commerce_and_cms").hide();
-      });
-    });
-
-
-    $(document).ready(function(){
-      $("#blockchain_and_ml_menu").click(function(){
-        $("#blockchain_and_ml").show("slide");
-      
-      });
-
-      $("#blockchain_and_ml_menu").click(function(){
-        $("#blockchain_and_ml_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
-        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-      
-      });
-
-
-      $("#web_and_full_stack_menu").click(function(){
-        $("#blockchain_and_ml").hide();       
-      });
-      $("#mobility-menu").click(function(){
-        $("#blockchain_and_ml").hide();       
-      });
-      $("#e_commerce_and_cms_menu").click(function(){
-        $("#blockchain_and_ml").hide();
-      });
-      $("#others_menu").click(function(){
-        $("#blockchain_and_ml").hide();
-      });
-    });
-
-
-
-    $(document).ready(function(){
-      $("#others_menu").click(function(){
-        $("#others").show("slide");
-      
-      });
-
-      $("#others_menu").click(function(){
-        $("#others_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
-        $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-        $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
-      
-      });
-
-
-      $("#web_and_full_stack_menu").click(function(){
-        $("#others").hide();       
-      });
-      $("#mobility-menu").click(function(){
-        $("#others").hide();       
-      });
-      $("#e_commerce_and_cms_menu").click(function(){
-        $("#others").hide();
-      });
-      $("#blockchain_and_ml_menu").click(function(){
-        $("#others").hide();
-      });
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /** script for navigation **/
-
-    $(document).ready(function(){
-      $("#tech-pool").mouseover(function(){
-        $("#tech-pool-items").show("slide");      
-      
-      });
-
-      $("#tech-pool-items").mouseover(function(){  
-        $("#tech-pool-items").show();  
-      });  
-      $("#tech-pool-items").mouseout(function(){
-        $("#tech-pool-items").hide();
-      });
-
-      $("#dev-service").mouseover(function(){  
-        $("#tech-pool-items").hide();  
-      }); 
-
-      $("#how-it-works-nav").mouseover(function(){  
-        $("#tech-pool-items").hide();  
-      }); 
-
-      $("#blog-nav").mouseover(function(){  
-        $("#tech-pool-items").hide();  
-      }); 
-      
-      $("#career-nav").mouseover(function(){  
-        $("#tech-pool-items").hide();  
-      }); 
-      $("#contact-nav").mouseover(function(){  
-        $("#tech-pool-items").hide();  
-      });
-
-      $(".navbar-brand").mouseover(function(){  
-        $("#tech-pool-items").hide();  
-      });
-
-     });
-
-
-
-
-
-  $(document).ready(function(){  
-    $("#dev-service").mouseover(function(){
-        $("#dev-service-items").show("slide");
-               
-      
-      });
-      $("#dev-service-items").mouseover(function(){  
-        $("#dev-service-items").show();  
-      });  
-      $("#dev-service-items").mouseout(function(){
-        $("#dev-service-items").hide();
-      });
-
-      $("#tech-pool").mouseover(function(){  
-        $("#dev-service-items").hide();  
-      }); 
-
-      $("#how-it-works-nav").mouseover(function(){  
-        $("#dev-service-items").hide();  
-      }); 
-
-      $("#blog-nav").mouseover(function(){  
-        $("#dev-service-items").hide();  
-      }); 
-      
-      $("#career-nav").mouseover(function(){  
-        $("#dev-service-items").hide();  
-      }); 
-      $("#contact-nav").mouseover(function(){  
-        $("#dev-service-items").hide();  
-      });
-      $(".navbar-brand").mouseover(function(){  
-        $("#dev-service-items").hide();  
-      });
-
-
-      
-    });
-
-
-
-
-    $(document).ready(function(){
-      $("#demo").mouseenter(function(){        
-        $("#top").fadeOut(300); 
-      });
-      $("#section-2-home").mouseenter(function(){
-        $("#top").fadeIn(300);
-      });
-      $("#section-4-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-5-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-6-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-7-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-8-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-9-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-10-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-11-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-12-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-13-container").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#blog-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#section-15-home").mouseenter(function(){
-        $("#top").show();
-      });
-      $("#footer-home").mouseenter(function(){
-        $("#top").show();
-      });
-
-    });
-  
-        $(document).ready(function(){
-        $("#top").click( function() {
-          jQuery("body,html").animate({
-            scrollTop: 0
-          }, "smooth")
-        });
-        });
-    
-
-
-
-</script>
-
-     
-
-<!--  <script>
-      $(document).ready(function(){
-        $("#web_and_full_stack_menu").click(function(){
-            $("#web_and_full_stack").toggle("slide");
-            
-           });
-        });
-
-
-    $(document).ready(function(){
-        $("#mobility-menu").click(function(){
-            $("#mobility").toggle("slide");
-            
-        });
-    });
-    $(document).ready(function(){
-        $("#e_commerce_and_cms_menu").click(function(){
-            $("#e_commerce_and_cms").toggle("slide");
-            
-        });
-    });
-    $(document).ready(function(){
-        $("#blockchain_and_ml_menu").click(function(){
-            $("#blockchain_and_ml").toggle("slide");
-            
-        });
-    });
-    $(document).ready(function(){
-        $("#others_menu").click(function(){
-            $("#others").toggle("slide");
-            
-        });
-    });
-    
-
-</script>
- -->
   
     
 </head>
@@ -1491,19 +1103,19 @@
       <img src="images/slide-t4.webp" > 
       <div class="carousel-caption">
           <div class="text-left">
-          <h1 class="animated zoomInRight slow">Developer on rent</h1>
-          <h3 class="animated zoomInUp delay-1s">Connect,rent,And work</h3>
+          <h1 class="wow zoomInRight" data-wow-duration="2s" >Developer on rent</h1>
+          <h3 class="wow zoomInUp delay-1s">Connect,rent,And work</h3>
       </div>
           <div class="text-left">
-          <button type="button" class="btn btn-primary btn-lg btn-outline-light animated rollIn delay-2s">Get Start With Hiring</button></div>
+          <button type="button" class="btn btn-primary btn-lg btn-outline-light wow rollIn delay-2s">Get Start With Hiring</button></div>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/slide-t5.jpg">
       <div class="carousel-caption">
           <div class="text-left">
-        <h1 class="animated rubberBand slow">Hire Tech Developer </h1>
-        <h3 class="animated zoomIn slow">Pre Vetted Dedicated Team Of Developer For rent</h3>
+        <h1 class="wow rubberBand slow">Hire Tech Developer </h1>
+        <h3 class="wow zoomIn slow">Pre Vetted Dedicated Team Of Developer For rent</h3>
           </div>
         <div class="text-left">
         <button type="button" class="btn btn-outline-light btn-lg btn-success">Get Start With Hiring</button></div>
@@ -1513,11 +1125,11 @@
       <img src="images/s5.jpg">
       <div class="carousel-caption">
           <div class="text-left">
-        <h1 class="animated bounceInUp slow">Developer on rent</h1>
-        <h3 class="animated heartBeat slow">Connect,rent,paid</h3>
+        <h1 class="wow bounceInUp slow">Developer on rent</h1>
+        <h3 class="wow heartBeat slow">Connect,rent,paid</h3>
     </div>
         <div class="text-left">
-        <button type="button" class="btn btn-outline-light btn-lg btn-danger animated rollIn delay-2s">Get Start With Hiring</button></div>
+        <button type="button" class="btn btn-outline-light btn-lg btn-danger wow rollIn delay-2s">Get Start With Hiring</button></div>
     </div>
     </div>
   </div>
@@ -2215,7 +1827,7 @@
         <div class="row">
           <div class="col-md-12 pt-5">
             <div class="row text-center">
-              <div class="col col-md-3 mb-sm animated fadeInLeft slow" data-aos="fade-up">
+              <div class="col col-md-3 mb-sm wow fadeInLeft" data-wow-duration="2s" >
                 <div>
                   <div class="section-4-img">
                     <img src="images/connect.png" alt="connect">
@@ -2228,7 +1840,7 @@
                 </div>
                
               </div>
-              <div class="col col-sm-3 mb-sm animated fadeInLeft delay-2s">
+              <div class="col col-sm-3 mb-sm wow fadeInLeft delay-2s">
                 <div>
                   <div class="section-4-img">
                     <img src="images/Rent.png" alt="Rent">
@@ -2242,7 +1854,7 @@
                 
                 
               </div>
-              <div class="col col-sm-3 mb-sm animated fadeInRight delay-2s">
+              <div class="col col-sm-3 mb-sm wow fadeInRight delay-2s">
                 <div>
                   <div class="section-4-img">
                     <img src="images/Work.png" alt="Work">
@@ -2256,7 +1868,7 @@
                 
                 
               </div>
-              <div class="col col-sm-3 mb-sm animated fadeInRight slow">
+              <div class="col col-sm-3 mb-sm wow fadeInRight slow">
                 <div>
                   <div class="section-4-img">
                     <img src="images/Pay.png" alt="Pay">
@@ -2293,7 +1905,7 @@
         </div>
         <div class="container text-center mt-5" >
           <div class="row ">
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn slow"> 
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn slow"> 
               <div class="section_5_container_box ">
                 <div  >
                   <img src="images/Software Development.png" alt="software development" class="section_5_logo">
@@ -2304,7 +1916,7 @@
               </div>
 
             </div> 
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn delay-2s"> 
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn delay-2s"> 
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Mobility.png" alt="Mobility" class="section_5_logo">
@@ -2316,7 +1928,7 @@
 
             </div>
 
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn delay-4s"> 
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn delay-4s"> 
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Team.png" alt="Dedicated Teams" class="section_5_logo">
@@ -2329,7 +1941,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn delay-4s">
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn delay-4s">
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Full stack.png" alt="Full stack developers" class="section_5_logo">
@@ -2339,7 +1951,7 @@
               </div>
 
             </div>
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn delay-2s">
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn delay-2s">
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Business Transformation.png" alt="TRANSFORMATION" class="section_5_logo">
@@ -2349,7 +1961,7 @@
               </div>
 
             </div>
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn slow">
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn slow">
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Devops.png" alt="Devops" class="section_5_logo">
@@ -2361,7 +1973,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn slow">
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn slow">
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Ai.png" alt="AI" class="section_5_logo">
@@ -2370,7 +1982,7 @@
                 <p>Build your next Artificial Intelligence Application with our software development teams having expertise on platforms like Tensorflow, GoLang, etc.</p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn delay-2s">
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn delay-2s">
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Product Innovation.png" alt="INnovation" class="section_5_logo">
@@ -2379,7 +1991,7 @@
                 <p>We have expertise in product engineering and innovation. Our development teams work remotely to align requirements that can forge in building quality.</p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-12 col-12 section_5_box animated bounceIn delay-4s">
+            <div class="col-lg-4 col-sm-12 col-12 section_5_box wow bounceIn delay-4s">
               <div class="section_5_container_box">
                 <div >
                   <img src="images/Block Chain-1.png" alt="Blockchain" class="section_5_logo">
@@ -3508,9 +3120,404 @@
   })
   </script>  
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+<script type="text/javascript" src="jqury.js"></script>
+<script type="text/javascript" src="owl.carousel.js"></script>
+<script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+<script type="text/javascript">
+  jQuery().ready(function () {
+      $.get("preloader.html", function(data) {
+          jQuery("#preloader").html(data);
+      });
+  });
+  </script>  
+
+
+ <script>
+         /**   $(function(){
+                  $("#preloader").load("preloader.html"); 
+                  
+                }); **?
+  </script>  
+
+
+
+<script>      
+        $(window).on('load', function() {             
+          $('#preloader').fadeOut(); 
+          $('#preloader').delay(350).fadeOut('slow'); 
+          $('body').delay(350).css({'overflow':'visible'});
+        })
+
+
+  $(document).ready(function(){
+    $("#web_and_full_stack_menu").click(function(){
+      $("#web_and_full_stack").show("slide");
+    
+    });
+
+    $("#web_and_full_stack_menu").click(function(){
+      $("#web_and_full_stack_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+      $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+    
+    });
+
+
+
+    $("#mobility-menu").click(function(){
+      $("#web_and_full_stack").hide();       
+    });
+    $("#e_commerce_and_cms_menu").click(function(){
+      $("#web_and_full_stack").hide();       
+    });
+    $("#blockchain_and_ml_menu").click(function(){
+      $("#web_and_full_stack").hide();
+    });
+    $("#others_menu").click(function(){
+      $("#web_and_full_stack").hide();
+    });
+  });
+
+
+  $(document).ready(function(){
+    $("#mobility-menu").click(function(){
+      $("#mobility").show("slide");
+    
+    });
+    $("#mobility-menu").click(function(){
+      $("#mobility-menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+      $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+    
+    });
+
+    $("#web_and_full_stack_menu").click(function(){
+      $("#mobility").hide();       
+    });
+    $("#e_commerce_and_cms_menu").click(function(){
+      $("#mobility").hide();       
+    });
+    $("#blockchain_and_ml_menu").click(function(){
+      $("#mobility").hide();
+    });
+    $("#others_menu").click(function(){
+      $("#mobility").hide();
+    });
+  });
+
+
+  $(document).ready(function(){
+    $("#e_commerce_and_cms_menu").click(function(){
+      $("#e_commerce_and_cms").show("slide");
+    
+    });
+
+    $("#e_commerce_and_cms_menu").click(function(){
+      $("#e_commerce_and_cms_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+      $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+    
+    });
+
+
+    $("#web_and_full_stack_menu").click(function(){
+      $("#e_commerce_and_cms").hide();       
+    });
+    $("#mobility-menu").click(function(){
+      $("#e_commerce_and_cms").hide();       
+    });
+    $("#blockchain_and_ml_menu").click(function(){
+      $("#e_commerce_and_cms").hide();
+    });
+    $("#others_menu").click(function(){
+      $("#e_commerce_and_cms").hide();
+    });
+  });
+
+
+  $(document).ready(function(){
+    $("#blockchain_and_ml_menu").click(function(){
+      $("#blockchain_and_ml").show("slide");
+    
+    });
+
+    $("#blockchain_and_ml_menu").click(function(){
+      $("#blockchain_and_ml_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+      $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#others_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+    
+    });
+
+
+    $("#web_and_full_stack_menu").click(function(){
+      $("#blockchain_and_ml").hide();       
+    });
+    $("#mobility-menu").click(function(){
+      $("#blockchain_and_ml").hide();       
+    });
+    $("#e_commerce_and_cms_menu").click(function(){
+      $("#blockchain_and_ml").hide();
+    });
+    $("#others_menu").click(function(){
+      $("#blockchain_and_ml").hide();
+    });
+  });
+
+
+
+  $(document).ready(function(){
+    $("#others_menu").click(function(){
+      $("#others").show("slide");
+    
+    });
+
+    $("#others_menu").click(function(){
+      $("#others_menu").css({"background-color":"#e6f5fb" , "border-bottom" : "3px solid #33ccff"});
+      $("#mobility-menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#web_and_full_stack_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#e_commerce_and_cms_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+      $("#blockchain_and_ml_menu").css({"background-color": "#ffffff" , "border-bottom" : "none"});
+    
+    });
+
+
+    $("#web_and_full_stack_menu").click(function(){
+      $("#others").hide();       
+    });
+    $("#mobility-menu").click(function(){
+      $("#others").hide();       
+    });
+    $("#e_commerce_and_cms_menu").click(function(){
+      $("#others").hide();
+    });
+    $("#blockchain_and_ml_menu").click(function(){
+      $("#others").hide();
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /** script for navigation **/
+
+  $(document).ready(function(){
+    $("#tech-pool").mouseover(function(){
+      $("#tech-pool-items").show("slide");      
+    
+    });
+
+    $("#tech-pool-items").mouseover(function(){  
+      $("#tech-pool-items").show();  
+    });  
+    $("#tech-pool-items").mouseout(function(){
+      $("#tech-pool-items").hide();
+    });
+
+    $("#dev-service").mouseover(function(){  
+      $("#tech-pool-items").hide();  
+    }); 
+
+    $("#how-it-works-nav").mouseover(function(){  
+      $("#tech-pool-items").hide();  
+    }); 
+
+    $("#blog-nav").mouseover(function(){  
+      $("#tech-pool-items").hide();  
+    }); 
+    
+    $("#career-nav").mouseover(function(){  
+      $("#tech-pool-items").hide();  
+    }); 
+    $("#contact-nav").mouseover(function(){  
+      $("#tech-pool-items").hide();  
+    });
+
+    $(".navbar-brand").mouseover(function(){  
+      $("#tech-pool-items").hide();  
+    });
+
+   });
+
+
+
+
+
+$(document).ready(function(){  
+  $("#dev-service").mouseover(function(){
+      $("#dev-service-items").show("slide");
+             
+    
+    });
+    $("#dev-service-items").mouseover(function(){  
+      $("#dev-service-items").show();  
+    });  
+    $("#dev-service-items").mouseout(function(){
+      $("#dev-service-items").hide();
+    });
+
+    $("#tech-pool").mouseover(function(){  
+      $("#dev-service-items").hide();  
+    }); 
+
+    $("#how-it-works-nav").mouseover(function(){  
+      $("#dev-service-items").hide();  
+    }); 
+
+    $("#blog-nav").mouseover(function(){  
+      $("#dev-service-items").hide();  
+    }); 
+    
+    $("#career-nav").mouseover(function(){  
+      $("#dev-service-items").hide();  
+    }); 
+    $("#contact-nav").mouseover(function(){  
+      $("#dev-service-items").hide();  
+    });
+    $(".navbar-brand").mouseover(function(){  
+      $("#dev-service-items").hide();  
+    });
+
+
+    
+  });
+
+
+
+
+  $(document).ready(function(){
+    $("#demo").mouseenter(function(){        
+      $("#top").fadeOut(300); 
+    });
+    $("#section-2-home").mouseenter(function(){
+      $("#top").fadeIn(300);
+    });
+    $("#section-4-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-5-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-6-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-7-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-8-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-9-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-10-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-11-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-12-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-13-container").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#blog-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#section-15-home").mouseenter(function(){
+      $("#top").show();
+    });
+    $("#footer-home").mouseenter(function(){
+      $("#top").show();
+    });
+
+  });
+
+      $(document).ready(function(){
+      $("#top").click( function() {
+        jQuery("body,html").animate({
+          scrollTop: 0
+        }, "smooth")
+      });
+      });
+  
+
+
+
+</script>
+
+   
+
+<!--  <script>
+    $(document).ready(function(){
+      $("#web_and_full_stack_menu").click(function(){
+          $("#web_and_full_stack").toggle("slide");
+          
+         });
+      });
+
+
+  $(document).ready(function(){
+      $("#mobility-menu").click(function(){
+          $("#mobility").toggle("slide");
+          
+      });
+  });
+  $(document).ready(function(){
+      $("#e_commerce_and_cms_menu").click(function(){
+          $("#e_commerce_and_cms").toggle("slide");
+          
+      });
+  });
+  $(document).ready(function(){
+      $("#blockchain_and_ml_menu").click(function(){
+          $("#blockchain_and_ml").toggle("slide");
+          
+      });
+  });
+  $(document).ready(function(){
+      $("#others_menu").click(function(){
+          $("#others").toggle("slide");
+          
+      });
+  });
+  
+
+</script>
+-->
+
+
+<script src="wow.js"></script>
+<script>
+  new WOW().init();
+  </script>
  
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
