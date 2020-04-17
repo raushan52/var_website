@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
   
   <link rel="stylesheet" type="text/css" href="style.css">
-  
+  <link href='//fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
   
   
   
@@ -1103,7 +1103,7 @@
       <img src="images/slide-t4.webp" > 
       <div class="carousel-caption">
           <div class="text-left">
-          <h1 class="wow zoomInRight" data-wow-duration="2s" >Developer on rent</h1>
+          <h1 class="wow zoomInRight" data-wow-duration="2s">Developer on rent</h1>
           <h3 class="wow zoomInUp delay-1s">Connect,rent,And work</h3>
       </div>
           <div class="text-left">
@@ -2803,13 +2803,16 @@
               </ul>
             </div>
             <div class=" col-md-6 col-sm-12 mt-sm-5 mt-lg-0 mb-sm-2 mb-lg-0">
+
+              <?php include('linked_pages/email.php'); ?>
                
-                    <form action="linked_pages/form.php" method="POST" class="contact-form">
+                    <form action="linked_pages/email.php" method="POST" class="contact-form">
                       <div class="container ">
                         <div class="row">
                           <!--<div class="form-group"> -->
                             <div class="col-md-12">
-                              <input id="name" type="text" value="" name="your_name" placeholder="Your Name" class="form-control" maxlength="100" data-msg-required="Please enter your name." style="border: none; border-bottom: 1px solid #333;">
+                              <input id="name" type="text" value="" name="name" placeholder="Your Name" class="form-control" maxlength="100" data-msg-required="Please enter your name." style="border: none; border-bottom: 1px solid #333;">
+                              <span class="error"><?= $name_error ?></span>
                             </div>
                           </div>
                        <!-- </div> -->
@@ -2819,10 +2822,12 @@
                       <div class="row">
                         <!--<div class="form-group"> -->
                           <div class="col-md-6">
-                            <input id="email" type="email" value="" placeholder="Email" name="your_email" maxlength="100" class="form-control" style="border-radius: 0;" style="border: none; border-bottom: 1px solid #333;">
+                            <input id="email" type="text" value="" placeholder="Email" name="email" maxlength="100" class="form-control" style="border-radius: 0;" style="border: none; border-bottom: 1px solid #333;">
+                            <span class="error"><?= $email_error ?></span>
                           </div>
                           <div class="col-md-6">
-                            <input id="phone" type="text" value="" placeholder="Phone number" name="your_phone" maxlength="20" class="form-control" style="border-radius: 0;"     style="border: none; border-bottom: 1px solid #333;"> 
+                            <input id="phone" type="text" value="" placeholder="Phone number" name="phone" maxlength="20" class="form-control" style="border-radius: 0;"     style="border: none; border-bottom: 1px solid #333;"> 
+                            <span class="error"><?= $phone_error ?></span>
                           </div>
                         </div>
       
@@ -2831,7 +2836,7 @@
                       <div class="row">
                        <!-- <div class="form-group"> -->
                           <div class="col-md-12 mb-3">
-                            <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" name="your_message" style="border-radius: 0;"  style="border: none; border-bottom: 1px solid #333;"></textarea>
+                            <textarea id="message" class="form-control" maxlength="500" placeholder="Tell us about your project" rows="5" type="text" name="message" style="border-radius: 0;"  style="border: none; border-bottom: 1px solid #333;"></textarea>
                           </div>
                         </div>
                       <!-- </div> -->
@@ -2839,52 +2844,15 @@
                       <div class="row">
                         <div></div>
                         <div class="col-md-12 " style="position: relative; left: 50px;">
-                          <input id="submit_form" class="btn btn-danger btn-lg mb-xlg" type="submit" value="SUBMIT">
+                          <input id="submit_form" class="btn btn-danger btn-lg mb-xlg" type="submit" data-submit="...Sending">
+                          <div class="success"><?= $success; ?></div>
                         </div>
                       </div>
                     </div>
                     <img src="img/loading.gif" id="loading-img" style="display: none;">
                     </form>
                     <div class="response_msg"></div>
-                    <script>
-                      $(document).ready(function(){
-                      $(".contact-form").on("submit",function(e){
-                      e.preventDefault();
-                      if($(".contact-form [name='your_name']").val() === '')
-                      {
-                      $(".contact-form [name='your_name']").css("border","1px solid red");
-                      }
-                      else if ($(".contact-form [name='your_email']").val() === '')
-                      {
-                      $(".contact-form [name='your_email']").css("border","1px solid red");
-                      }
-                      else
-                      {
-                      $("#loading-img").css("display","block");
-                      var sendData = $( this ).serialize();
-                      $.ajax({
-                      type: "POST",
-                      url: "linked_pages/form.php",
-                      data: sendData,
-                      success: function(data){
-                      $("#loading-img").css("display","none");
-                      $(".response_msg").text(data);
-                      $(".response_msg").slideDown().fadeOut(3000);
-                      $(".contact-form").find("input[type=text], input[type=email], textarea").val("");
-                      }
-                      });
-                      }
-                      });
-                      $(".contact-form input").blur(function(){
-                      var checkValue = $(this).val();
-                      if(checkValue != '')
-                      {
-                      $(this).css("border","1px solid #eeeeee");
-                      }
-                      });
-                      });
-                      </script>
-
+                 
               
             </div>
 

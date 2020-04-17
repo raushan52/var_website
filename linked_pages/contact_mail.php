@@ -1,9 +1,27 @@
 <?php
-    $toEmail = "roushan@witarist.com";
-    $mailHeaders = "From: " . $_POST["your_name"] . "<". $_POST["your_email"] .">\r\n";
-    if(mail($toEmail, $_POST["your_message"], $_POST["your_phone"], $mailHeaders)) {
-    echo"<p class='success'>Contact Mail Sent.</p>";
-    } else {
-    echo"<p class='Error'>Problem in Sending Mail.</p>";
+
+    
+    
+      //define variables and set to empty values 
+       
+        $name = $email = $phone =  "";
+
+
+
+    $to = 'mytweet.rk@gmail.com';
+    $subject = 'Enquiry Form Submit';
+  
+   
+   
+    $message = "From : "."  \r\n" ."  \r\n" . "Name : " . $_POST["name"]."  \r\n" . "Email : ". $_POST["email"]."  \r\n" . "Contact Number :  ". $_POST["contact_number"] ."\r\n";
+
+    if (mail($to, $subject, $message)){       
+        $name = $email = $phone =  '';
+        header("Location: after_form.html");
+       
     }
+    
+
+
+  
     ?>
