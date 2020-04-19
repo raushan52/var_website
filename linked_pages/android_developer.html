@@ -15,12 +15,32 @@
    <link rel="stylesheet" type="text/css" href="../owl.theme.default.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
    
+
+
    <script type="text/javascript" src="../jqury.js"></script>
    <script type="text/javascript" src="../owl.carousel.js"></script>
    <script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
 
      <!--jquery CDN -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+     <script type="text/javascript">
+        jQuery().ready(function () {
+            $.get("preloader.html", function(data) {
+                jQuery("#preloader").html(data);
+            });
+        });
+        </script>  
+      
+      
+      <script>
+         $(window).on('load', function() {             
+                $('#preloader').fadeOut(); 
+                $('#preloader').delay(350).fadeOut('slow'); 
+                $('body').delay(350).css({'overflow':'visible'});
+              });
+      </script>
+      
 
      <!--Header and Footer-->
      <script> 
@@ -38,9 +58,18 @@
 </head>
 <body>
 
-    <!--Header-->
+
+<!--pre loader-->
+<div id="preloader"></div>
+<!--pre loader-->
+
+
+
+  <!--Header-->
     <div id="header"></div>
 <!--End of Header-->
+
+
 
 
 

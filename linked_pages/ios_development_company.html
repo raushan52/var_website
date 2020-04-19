@@ -22,6 +22,23 @@
      <!--jquery CDN -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+     <script type="text/javascript">
+        jQuery().ready(function () {
+            $.get("preloader.html", function(data) {
+                jQuery("#preloader").html(data);
+            });
+        });
+        </script>  
+      
+      
+      <script>
+         $(window).on('load', function() {             
+                $('#preloader').fadeOut(); 
+                $('#preloader').delay(350).fadeOut('slow'); 
+                $('body').delay(350).css({'overflow':'visible'});
+              })
+      </script>
+
      <!--Header and Footer-->
      <script> 
          $(function(){
@@ -37,6 +54,11 @@
      <!--Header and Footer-->
 </head>
 <body>
+
+      <!--pre loader-->
+<div id="preloader"></div>
+<!--pre loader-->
+
 
     <!--Header-->
     <div id="header"></div>

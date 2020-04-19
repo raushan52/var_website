@@ -17,7 +17,31 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href='//fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
   
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
+
+
+<script type="text/javascript">
+  jQuery().ready(function () {
+      $.get("preloader.html", function(data) {
+          jQuery("#preloader").html(data);
+      });
+  });
+  </script>  
+
+
+<script>
+   $(window).on('load', function() {             
+          $('#preloader').fadeOut(); 
+          $('#preloader').delay(350).fadeOut('slow'); 
+          $('body').delay(350).css({'overflow':'visible'});
+        })
+</script>
+
+
+
   
     
 </head>
@@ -2543,7 +2567,7 @@
         
           <div class="row">
 
-            <div class="col col-md-12 owl-carousel owl-theme">
+            <div class="col col-md-12 owl-carousel owl-theme" >
               <div class="item "><img src="images/c1.png" class="img-fluid"></div>
               <div class="item "><img src="images/c2.jpg" class="img-fluid"></div>
               <div class="item "><img src="images/c3.png" class="img-fluid"></div>
@@ -2643,7 +2667,7 @@
               </div>
 
 
-              <div class="col-md-6 section-12-img">
+              <div class="col-md-6 section-12-img wow flipInY slow">
                                 
                   
                <img src="images/happy1.svg" alt="witarist" width="250" style="position : absolute; right : 30%; bottom : 0;">
@@ -2669,22 +2693,22 @@
 
             </div>
             <div class="row center mt-xl pt-5 pt-md-0" style="display: flex; flex-direction: row;">
-                <div class="col-md-2 col">
+                <div class="col-md-2 col wow bounceIn" data-wow-duration="1200ms" style="animation-delay: 0ms;">
                   <img src="co_logo/Knowstartup.png" >
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col wow bounceIn" data-wow-duration="1200ms" style="animation-delay: 200ms;">
                   <img src="co_logo/Yourstory.png" >
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col wow bounceIn" data-wow-duration="1200ms" style="animation-delay: 400ms;">
                   <img src="co_logo/Indianstratups.png" >
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col wow bounceIn" data-wow-duration="1200ms" style="animation-delay: 600ms;">
                   <img src="co_logo/silicon-india.png" >
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col wow bounceIn" data-wow-duration="1200ms" style="animation-delay: 800ms;">
                   <img src="co_logo/awfis.png">
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col wow bounceIn" data-wow-duration="1200ms" style="animation-delay: 1200ms;">
                   <img src="co_logo/red-news-wire.png" >
                 </div>
             </div>
@@ -3073,40 +3097,7 @@
 
     <!--End of Footer-->
 
-    <script type="text/javascript">
-      $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:5
-          }
-      }
-  })
-  </script>  
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-
-<script type="text/javascript" src="jqury.js"></script>
-<script type="text/javascript" src="owl.carousel.js"></script>
-<script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-
-<script type="text/javascript">
-  jQuery().ready(function () {
-      $.get("preloader.html", function(data) {
-          jQuery("#preloader").html(data);
-      });
-  });
-  </script>  
 
 
  <script>
@@ -3119,11 +3110,7 @@
 
 
 <script>      
-        $(window).on('load', function() {             
-          $('#preloader').fadeOut(); 
-          $('#preloader').delay(350).fadeOut('slow'); 
-          $('body').delay(350).css({'overflow':'visible'});
-        })
+       
 
 
   $(document).ready(function(){
@@ -3486,8 +3473,35 @@ $(document).ready(function(){
   new WOW().init();
   </script>
  
+
+
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="jqury.js"></script>
+<script type="text/javascript" src="owl.carousel.min.js"></script>
+
+
+<script>
+    var owl = $('.owl-carousel');
+        owl.owlCarousel({
+        items:6,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+    });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+
+</script>  
+
+<script src="https://kit.fontawesome.com/318c888144.js" crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
 
 
@@ -3496,6 +3510,9 @@ $(document).ready(function(){
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+
+
     
 </body>
 </html>
