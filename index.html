@@ -1201,7 +1201,7 @@
         <div class="col-sm-12">
           <div class="row text-center" style="margin-bottom: 38px; background-color: white;">
             <div class="col-12 col-sm-6 col-md" id="cont-2-item-1">
-              <div class="sec-2-img-div menu-title tab-active" id="web_and_full_stack_menu" >
+              <div class="sec-2-img-div menu-title tab-active sec-2-menu" id="web_and_full_stack_menu" >
                 <img src="images/Fullfull stack-1.png" alt="full-stack">
                 <br>
                 
@@ -1212,7 +1212,7 @@
       
             </div>
             <div class="col-12 col-sm-6 col-md" id="cont-2-item-2">
-              <div class="sec-2-img-div" id="mobility-menu">
+              <div class="sec-2-img-div sec-2-menu" id="mobility-menu">
                 <img src="images/Mobility-1.png" alt="mobility">  
                 <br>
                   <span>Mobility</span>
@@ -1222,7 +1222,7 @@
       
             </div>
             <div class="col-12 col-sm-6 col-md" id="cont-2-item-3">
-              <div class="sec-2-img-div" id="e_commerce_and_cms_menu">
+              <div class="sec-2-img-div sec-2-menu" id="e_commerce_and_cms_menu">
                 <img src="images/E com.png" alt="E-commerce">
                 <br>
                   <span>E-commerce & CMS</span>
@@ -1232,7 +1232,7 @@
       
             </div>
             <div class="col-12 col-sm-6 col-md" id="cont-2-item-4">
-              <div class="sec-2-img-div" id="blockchain_and_ml_menu">
+              <div class="sec-2-img-div sec-2-menu" id="blockchain_and_ml_menu">
                 <img src="images/Block chain.png" alt="blockchain">
                 <br>
                 
@@ -1243,7 +1243,7 @@
       
             </div>
             <div class="col-12 col-sm-6 col-md" id="cont-2-item-5">
-              <div class="sec-2-img-div" id="others_menu">
+              <div class="sec-2-img-div sec-2-menu" id="others_menu">
                 <img src="images/More.png" alt="Others">
                <br>
                   <span>Others</span>
@@ -3278,7 +3278,6 @@
 
 
 
-
   /** script for navigation **/
 
   $(document).ready(function(){
@@ -3479,17 +3478,35 @@ $(document).ready(function(){
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="jqury.js"></script>
 <script type="text/javascript" src="owl.carousel.min.js"></script>
+<script src="jquery.mousewheel.min.js"></script>
 
 
 <script>
     var owl = $('.owl-carousel');
         owl.owlCarousel({
         items:6,
+        nav:true,
+        dots:true,
         loop:true,
         margin:10,
         autoplay:true,
         autoplayTimeout:1000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            dots:false
+        },
+        600:{
+            items:3
+        },            
+        960:{
+            items:5
+        },
+        1200:{
+            items:6
+        }
+    }
     });
         $('.play').on('click',function(){
             owl.trigger('play.owl.autoplay',[1000])
@@ -3497,6 +3514,15 @@ $(document).ready(function(){
         $('.stop').on('click',function(){
             owl.trigger('stop.owl.autoplay')
         })
+
+        owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
 
 </script>  
 

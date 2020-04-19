@@ -195,6 +195,12 @@ html .container {
 }
 
 
+.sec-2-menu:hover{
+    border-bottom: 3px solid #33ccff;
+    background-color: #e6f5fb;
+}
+
+
 .section_5_box {
     display: flex;
     flex-direction: row;

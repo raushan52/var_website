@@ -17,6 +17,13 @@ html, body{
     color: white;
 }
 
+.nav-link:hover {
+    font-size: 124px;
+    font-weight: 800;
+   background-color: white;
+   border-radius: 10px;
+   color: #333;
+}
 
 
 .carousel-inner img {
